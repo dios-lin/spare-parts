@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0B0B0D;
+        color: #E5E1E4;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0B0B0D;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2E2E35;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF2E00;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 35s linear infinite;
+    }
+
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#070709",
+            "background": "#0B0B0D",
+            "surface": "#111114",
+            "surface-container-low": "#151518",
+            "surface-container": "#1B1B1F",
+            "surface-container-high": "#232328",
+            "surface-container-highest": "#2E2E35",
+            "primary": "#FF2E00",
+            "primary-container": "#E62800",
+            "on-surface": "#F2F0F3",
+            "on-surface-variant": "#9FA0A7",
+            "outline": "#2E2E35",
+            "outline-variant": "#1F1F24",
+            "secondary": "#A8BACD"
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"],
+            "headline": ["Space Grotesk", "sans-serif"],
+            "body": ["Geist", "sans-serif"],
+            "code": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-[#0B0B0D] font-body text-[#E5E1E4] antialiased selection:bg-primary selection:text-white">
+  <!-- ==================== MINIMALIST LUXURY HEADER ==================== -->
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-[#0B0B0D]/85 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300">
+    <div class="max-w-[1800px] h-20 mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <a class="flex items-center gap-3.5 group" href="index.html"><img alt="LINCCORE"
+          class="h-10 md:h-12 w-auto object-contain select-none" src="image/logo.png"></a>
+      <nav class="hidden lg:flex items-center gap-10 font-code text-xs tracking-[0.2em] uppercase"><a
+          class="text-primary-container hover:text-primary transition-colors duration-200 font-bold"
+          href="index.html">Home</a>
+        <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="products.html">Products</a>
+        <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="about us.html">About Us</a>
+        <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="news.html">Q&amp;A</a>
+        <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="connect.html">Contacts</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a class="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-[#0B0B0D] hover:bg-primary hover:text-white font-display text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-300"
+          href="#rfq-desk">
+          <span class="">B2B PORTAL / RFQ</span>
+          <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="w-full bg-[#0B0B0D] pt-20">
+    <!-- ==================== HERO: VISUAL-FIRST MONUMENTAL PRESENCE ==================== -->
+    <section
+      class="relative w-full min-h-[760px] lg:h-[820px] bg-[#070709] border-b border-white/10 overflow-hidden flex items-end">
+      <div class="absolute inset-0 z-0">
+        <img alt="Apex Moto Prototype Racing Superbike and CNC Billet Engine Architecture"
+          class="w-full h-full object-cover object-center filter brightness-95 contrast-110" src="image/hero.png">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/30 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B0B0D]/85 via-[#0B0B0D]/30 to-transparent"></div>
+      </div>
+      <div class="relative z-10 w-full max-w-[1800px] mx-auto px-6 lg:px-12 pt-28 pb-16 lg:pb-20">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <div class="max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-md border border-white/15 text-white mb-4">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold">MOTORSPORT
+                ENGINEERING &amp; TIER-1 OEM</span>
+            </div>
+            <h1
+              class="font-display text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white uppercase font-bold leading-[0.95] mb-4">
+              ENGINEERED<br><span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-neutral-400">WITHOUT
+                LIMIT.</span>
+            </h1>
+            <p class="font-body text-base sm:text-lg text-neutral-300 max-w-2xl leading-relaxed">Tier-1 precision
+              engineering and high-volume OEM parts manufacturing for motorcycles and scooters.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 lg:pb-2">
+            <a class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary hover:bg-white text-white hover:text-black font-display text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 shadow-[0_10px_30px_rgba(255,46,0,0.25)]"
+              href="#divisions">
+              <span class="">EXPLORE DIVISIONS</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== FOUR CORE ENGINEERING DIVISIONS (PURE VISUAL LOOKBOOK) ==================== -->
+
+    <!-- ==================== FOUR CORE ENGINEERING DIVISIONS (PURE VISUAL LOOKBOOK) ==================== -->
+    <section class="w-full py-28 lg:py-36" id="divisions">
+      <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+        <!-- Lookbook Section Header -->
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-white/[0.08] gap-6">
+          <div>
+            <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold block mb-2">PORTFOLIO
+              ARCHITECTURE</span>
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-white uppercase tracking-tight">
+              FOUR CORE DIVISIONS
+            </h2>
+          </div>
+        </div>
+        <!-- 4 Immersion Photographic Cards with Hover Glaze -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- CARD 1: POWERTRAIN & ENGINE -->
+          <a class="group relative block h-[560px] bg-[#111114] border border-white/[0.08] overflow-hidden transition-all duration-500 hover:border-primary/80 hover:shadow-[0_20px_40px_rgba(255,46,0,0.2)]"
+            href="cylinder.html">
+            <div class="absolute inset-0">
+              <img alt="DIV_01 Powertrain &amp; Engine CNC Titanium Piston and Billet Cylinder Head Assembly"
+                class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 filter brightness-[0.82] contrast-105"
+                src="image/powertrain.png">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/50 to-transparent"></div>
+              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500"></div>
+            </div>
+            <div class="relative z-10 h-full p-8 flex flex-col justify-between">
+              <div class="flex items-center justify-between font-code text-xs">
+                <span
+                  class="px-2.5 py-1 bg-black/70 backdrop-blur-md border border-white/15 text-white tracking-widest uppercase">DIV_01</span>
+              </div>
+              <div>
+                <div class="font-code text-[11px] text-neutral-300 tracking-[0.2em] uppercase mb-1">POWERTRAIN</div>
+                <h3
+                  class="font-display text-2xl font-bold text-white uppercase tracking-tight mb-4 group-hover:text-primary transition-colors">
+                  Powertrain &amp; Engine
+                </h3>
+
+                <div
+                  class="flex items-center justify-end gap-2 pt-4 border-t border-white/10 font-code text-xs tracking-wider text-neutral-300 group-hover:text-white">
+                  <span class="font-bold text-primary group-hover:text-white transition-colors uppercase">MORE</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform text-primary">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- CARD 2: BRAKING & DYNAMICS -->
+          <a class="group relative block h-[560px] bg-[#111114] border border-white/[0.08] overflow-hidden transition-all duration-500 hover:border-primary/80 hover:shadow-[0_20px_40px_rgba(255,46,0,0.2)]"
+            href="lever.html">
+            <div class="absolute inset-0">
+              <img alt="DIV_02 Fast-Moving Parts: Racing Brake Pads, Chain Links, Iridium Spark Plug, Drive Belt"
+                class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 filter brightness-[0.82] contrast-105"
+                src="image/fast_moving_parts.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/50 to-transparent"></div>
+              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500"></div>
+            </div>
+            <div class="relative z-10 h-full p-8 flex flex-col justify-between">
+              <div class="flex items-center justify-between font-code text-xs">
+                <span
+                  class="px-2.5 py-1 bg-black/70 backdrop-blur-md border border-white/15 text-white tracking-widest uppercase">DIV_02</span>
+              </div>
+              <div>
+                <div class="font-code text-[11px] text-neutral-300 tracking-[0.2em] uppercase mb-1">FAST-MOVING</div>
+                <h3
+                  class="font-display text-2xl font-bold text-white uppercase tracking-tight mb-4 group-hover:text-primary transition-colors">
+                  Fast-Moving Parts</h3>
+
+                <div
+                  class="flex items-center justify-end gap-2 pt-4 border-t border-white/10 font-code text-xs tracking-wider text-neutral-300 group-hover:text-white">
+                  <span class="font-bold text-primary group-hover:text-white transition-colors uppercase">MORE</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform text-primary">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- CARD 3: DRIVETRAIN SYSTEMS -->
+          <a class="group relative block h-[560px] bg-[#111114] border border-white/[0.08] overflow-hidden transition-all duration-500 hover:border-primary/80 hover:shadow-[0_20px_40px_rgba(255,46,0,0.2)]"
+            href="clutch.html">
+            <div class="absolute inset-0">
+              <img alt="DIV_03 Drivetrain Systems Close-Ratio Dog-Ring Gearbox and Slipper Clutch"
+                class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 filter brightness-[0.82] contrast-105"
+                src="image/drivetrain_parts.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/50 to-transparent"></div>
+              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500"></div>
+            </div>
+            <div class="relative z-10 h-full p-8 flex flex-col justify-between">
+              <div class="flex items-center justify-between font-code text-xs">
+                <span
+                  class="px-2.5 py-1 bg-black/70 backdrop-blur-md border border-white/15 text-white tracking-widest uppercase">DIV_03</span>
+              </div>
+              <div>
+                <div class="font-code text-[11px] text-neutral-300 tracking-[0.2em] uppercase mb-1">TRANSMISSION</div>
+                <h3
+                  class="font-display text-2xl font-bold text-white uppercase tracking-tight mb-4 group-hover:text-primary transition-colors">
+                  Drivetrain Systems
+                </h3>
+
+                <div
+                  class="flex items-center justify-end gap-2 pt-4 border-t border-white/10 font-code text-xs tracking-wider text-neutral-300 group-hover:text-white">
+                  <span class="font-bold text-primary group-hover:text-white transition-colors uppercase">MORE</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform text-primary">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- CARD 4: RACING DYNAMICS LAB -->
+          <a class="group relative block h-[560px] bg-[#111114] border border-white/[0.08] overflow-hidden transition-all duration-500 hover:border-primary/80 hover:shadow-[0_20px_40px_rgba(255,46,0,0.2)]"
+            href="steering-bearing.html">
+            <div class="absolute inset-0">
+              <img alt="DIV_04 Racing Dynamics Lab Zeiss 3D CMM Metrology Inspection Station"
+                class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 filter brightness-[0.82] contrast-105"
+                src="image/zeiss_cmm_metrology.png">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/50 to-transparent"></div>
+              <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500"></div>
+            </div>
+            <div class="relative z-10 h-full p-8 flex flex-col justify-between">
+              <div class="flex items-center justify-between font-code text-xs">
+                <span
+                  class="px-2.5 py-1 bg-black/70 backdrop-blur-md border border-white/15 text-white tracking-widest uppercase">DIV_04</span>
+              </div>
+              <div>
+                <div class="font-code text-[11px] text-neutral-300 tracking-[0.2em] uppercase mb-1">VALIDATION</div>
+                <h3
+                  class="font-display text-2xl font-bold text-white uppercase tracking-tight mb-4 group-hover:text-primary transition-colors">
+                  Racing Dynamics Lab
+                </h3>
+
+                <div
+                  class="flex items-center justify-end gap-2 pt-4 border-t border-white/10 font-code text-xs tracking-wider text-neutral-300 group-hover:text-white">
+                  <span class="font-bold text-primary group-hover:text-white transition-colors uppercase">MORE</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1.5 transition-transform text-primary">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHINA MOTORCYCLE BRANDS & FULL-CATEGORY PARTS ECOSYSTEM ==================== -->
+    <section class="w-full py-24 lg:py-32 bg-[#0B0B0D] border-t border-white/[0.08] relative overflow-hidden" id="china-brands-ecosystem">
+      <!-- Background Ambient Glow -->
+      <div class="pointer-events-none absolute -top-40 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px]"></div>
+      <div class="pointer-events-none absolute -bottom-40 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px]"></div>
+
+      <div class="max-w-[1800px] mx-auto px-6 lg:px-12 relative z-10">
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 pb-8 border-b border-white/[0.08] gap-8">
+          <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-black/60 backdrop-blur-md border border-primary/30 text-white mb-4">
+              <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+              <span class="font-code text-xs uppercase tracking-[0.25em] text-primary font-bold">CHINA MOTORCYCLE BRANDS · FULL CATEGORY SUPPLY</span>
+            </div>
+            <h2 class="font-display text-3xl sm:text-5xl lg:text-6xl font-bold text-white uppercase tracking-tight leading-[1.05]">
+              FULL CATEGORY CHINESE MOTORCYCLE BRANDS<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-neutral-300">CORE PARTS ONE-STOP PLATFORM</span>
+            </h2>
+            <p class="font-body text-neutral-400 text-base sm:text-lg mt-4 max-w-2xl leading-relaxed">
+              Comprehensive factory-direct supply for leading Chinese motorcycle brands including CFMOTO, QJMOTOR / Benelli, VOGE, ZONTES, and more. Full-range OEM &amp; high-precision aftermarket spare parts fitment.
+            </p>
+          </div>
+
+          <!-- Highlight Metrics Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 lg:gap-6 font-code bg-[#111114] p-5 border border-white/10">
+            <div class="border-r border-white/10 pr-4">
+              <div class="text-[10px] text-neutral-400 uppercase tracking-widest">COVERED BRANDS</div>
+              <div class="text-2xl lg:text-3xl font-bold text-primary font-display mt-1">50+</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Domestic OEM Brands</div>
+            </div>
+            <div class="border-r border-white/10 pr-4">
+              <div class="text-[10px] text-neutral-400 uppercase tracking-widest">READY SKUS</div>
+              <div class="text-2xl lg:text-3xl font-bold text-white font-display mt-1">120K+</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Full Category Inventory</div>
+            </div>
+            <div class="border-r border-white/10 pr-4">
+              <div class="text-[10px] text-neutral-400 uppercase tracking-widest">PARTS FITMENT</div>
+              <div class="text-2xl lg:text-3xl font-bold text-white font-display mt-1">100%</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">OEM Spec Matching</div>
+            </div>
+            <div>
+              <div class="text-[10px] text-neutral-400 uppercase tracking-widest">GLOBAL EXPORT</div>
+              <div class="text-2xl lg:text-3xl font-bold text-primary font-display mt-1">80+</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Countries &amp; Regions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Chinese Brand Showcase Cards Grid (4 Cards) -->
+        <div class="mb-16">
+          <div class="flex items-center justify-between mb-8">
+            <h3 class="font-display text-xl font-bold text-white uppercase tracking-wider flex items-center gap-3">
+              <span class="w-2.5 h-2.5 bg-primary"></span>
+              FEATURED CHINESE MOTORCYCLE BRANDS
+            </h3>
+            <span class="font-code text-xs text-neutral-400">DIRECT FACTORY OEM &amp; AFTERMARKET</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Brand 1: CFMOTO -->
+            <div class="group relative bg-[#111114] border border-white/10 hover:border-primary/80 transition-all duration-300 p-8 flex flex-col justify-between hover:shadow-[0_15px_35px_rgba(255,46,0,0.15)]">
+              <div>
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                  <div>
+                    <span class="font-code text-[11px] text-primary tracking-widest uppercase block mb-1">CFMOTO SERIES</span>
+                    <h4 class="font-display text-2xl font-bold text-white uppercase group-hover:text-primary transition-colors">CFMOTO</h4>
+                  </div>
+                  <span class="px-3 py-1 bg-black/70 border border-white/15 font-code text-xs text-neutral-300">30,000+ SKUs</span>
+                </div>
+                <p class="font-body text-sm text-neutral-400 mb-6">Full coverage for 250NK / 450SR / 450NK / 800MT / 700CL-X and CFORCE ATV powertrain cylinders, EFI sensors, drivetrain systems, and bodywork.</p>
+                <div class="flex flex-wrap gap-2 mb-6 font-code text-[11px]">
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">250NK / 450SR</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">800MT Adventure</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">CFORCE ATV</span>
+                </div>
+              </div>
+              <a href="products.html" class="inline-flex items-center justify-between w-full pt-4 border-t border-white/10 font-code text-xs font-bold text-primary group-hover:text-white transition-colors">
+                <span>EXPLORE CFMOTO PARTS</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Brand 2: QJMOTOR / BENELLI -->
+            <div class="group relative bg-[#111114] border border-white/10 hover:border-primary/80 transition-all duration-300 p-8 flex flex-col justify-between hover:shadow-[0_15px_35px_rgba(255,46,0,0.15)]">
+              <div>
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                  <div>
+                    <span class="font-code text-[11px] text-primary tracking-widest uppercase block mb-1">QJMOTOR &amp; BENELLI</span>
+                    <h4 class="font-display text-2xl font-bold text-white uppercase group-hover:text-primary transition-colors">QJMOTOR &amp; BENELLI</h4>
+                  </div>
+                  <span class="px-3 py-1 bg-black/70 border border-white/15 font-code text-xs text-neutral-300">28,000+ SKUs</span>
+                </div>
+                <p class="font-body text-sm text-neutral-400 mb-6">Fully compatible with SRK600, TRK502, RACING 550, CHASE 600, TNT300 multi-cylinder engine assemblies, crankshaft clutches, and brake systems.</p>
+                <div class="flex flex-wrap gap-2 mb-6 font-code text-[11px]">
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">SRK600 Inline-4</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">TRK502 Adventure</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">RACING 350/550</span>
+                </div>
+              </div>
+              <a href="products.html" class="inline-flex items-center justify-between w-full pt-4 border-t border-white/10 font-code text-xs font-bold text-primary group-hover:text-white transition-colors">
+                <span>EXPLORE QJMOTOR PARTS</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Brand 3: VOGE -->
+            <div class="group relative bg-[#111114] border border-white/10 hover:border-primary/80 transition-all duration-300 p-8 flex flex-col justify-between hover:shadow-[0_15px_35px_rgba(255,46,0,0.15)]">
+              <div>
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                  <div>
+                    <span class="font-code text-[11px] text-primary tracking-widest uppercase block mb-1">VOGE SERIES</span>
+                    <h4 class="font-display text-2xl font-bold text-white uppercase group-hover:text-primary transition-colors">VOGE</h4>
+                  </div>
+                  <span class="px-3 py-1 bg-black/70 border border-white/15 font-code text-xs text-neutral-300">25,000+ SKUs</span>
+                </div>
+                <p class="font-body text-sm text-neutral-400 mb-6">Complete coverage for VOGE 500DS / 300RR / 525AC / 900DSX and KE500 / LX300 twin-cylinder power platform high-precision parts and assemblies.</p>
+                <div class="flex flex-wrap gap-2 mb-6 font-code text-[11px]">
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">KE500 / 525 Engines</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">500DS / 900DSX</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">300RR Sports</span>
+                </div>
+              </div>
+              <a href="products.html" class="inline-flex items-center justify-between w-full pt-4 border-t border-white/10 font-code text-xs font-bold text-primary group-hover:text-white transition-colors">
+                <span>EXPLORE VOGE PARTS</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Brand 4: ZONTES -->
+            <div class="group relative bg-[#111114] border border-white/10 hover:border-primary/80 transition-all duration-300 p-8 flex flex-col justify-between hover:shadow-[0_15px_35px_rgba(255,46,0,0.15)]">
+              <div>
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                  <div>
+                    <span class="font-code text-[11px] text-primary tracking-widest uppercase block mb-1">ZONTES TECH</span>
+                    <h4 class="font-display text-2xl font-bold text-white uppercase group-hover:text-primary transition-colors">ZONTES</h4>
+                  </div>
+                  <span class="px-3 py-1 bg-black/70 border border-white/15 font-code text-xs text-neutral-300">18,000+ SKUs</span>
+                </div>
+                <p class="font-body text-sm text-neutral-400 mb-6">Dedicated for 310M / 350E / 350D maxi-scooters and 310V / 350GK street sports keyless smart control modules, liquid radiators, and aluminum swingarm components.</p>
+                <div class="flex flex-wrap gap-2 mb-6 font-code text-[11px]">
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">350E / 350D Maxi Scooter</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">310V / 350GK Sports</span>
+                  <span class="px-2.5 py-1 bg-[#151518] border border-white/10 text-neutral-300">Smart ECU Control</span>
+                </div>
+              </div>
+              <a href="products.html" class="inline-flex items-center justify-between w-full pt-4 border-t border-white/10 font-code text-xs font-bold text-primary group-hover:text-white transition-colors">
+                <span>EXPLORE ZONTES PARTS</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Category Breakdown (5 Core Assemblies) -->
+        <div class="bg-[#151518] border border-white/10 p-8 lg:p-12">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 gap-4">
+            <div>
+              <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold block mb-1">FULL CATEGORY PARTS COVERAGE</span>
+              <h3 class="font-display text-2xl md:text-3xl font-bold text-white uppercase tracking-tight">
+                5 CORE SYSTEM ASSEMBLIES · FULL PARTS CATALOG
+              </h3>
+            </div>
+            <div class="font-code text-xs text-neutral-400">
+              100% ORIGINAL OEM SPECS &amp; AFTERMARKET UPGRADES
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- Cat 1 -->
+            <a href="cylinder.html" class="group bg-[#0B0B0D] p-6 border border-white/10 hover:border-primary transition-all duration-300">
+              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">settings</span>
+              </div>
+              <h4 class="font-display text-lg font-bold text-white uppercase mb-2 group-hover:text-primary transition-colors">1. Powertrain &amp; Engine</h4>
+              <p class="font-body text-xs text-neutral-400 leading-relaxed mb-4">Cylinder blocks, piston kits, crankshaft connecting rods, camshafts, and valve gear assemblies.</p>
+              <div class="font-code text-[11px] text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <span>VIEW POWERTRAIN PARTS</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </a>
+
+            <!-- Cat 2 -->
+            <a href="stator.html" class="group bg-[#0B0B0D] p-6 border border-white/10 hover:border-primary transition-all duration-300">
+              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">bolt</span>
+              </div>
+              <h4 class="font-display text-lg font-bold text-white uppercase mb-2 group-hover:text-primary transition-colors">2. Electrical &amp; Sensors</h4>
+              <p class="font-body text-xs text-neutral-400 leading-relaxed mb-4">Coolant temperature sensors, magneto stator coils, starter motors, ECU igniters &amp; regulators.</p>
+              <div class="font-code text-[11px] text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <span>VIEW ELECTRICAL PARTS</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </a>
+
+            <!-- Cat 3 -->
+            <a href="clutch.html" class="group bg-[#0B0B0D] p-6 border border-white/10 hover:border-primary transition-all duration-300">
+              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">published_with_changes</span>
+              </div>
+              <h4 class="font-display text-lg font-bold text-white uppercase mb-2 group-hover:text-primary transition-colors">3. Drivetrain &amp; Clutch</h4>
+              <p class="font-body text-xs text-neutral-400 leading-relaxed mb-4">Multi-plate wet clutch assemblies, slipper clutches, CVT variator pulleys, sprocket &amp; chain kits.</p>
+              <div class="font-code text-[11px] text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <span>VIEW DRIVETRAIN PARTS</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </a>
+
+            <!-- Cat 4 -->
+            <a href="lever.html" class="group bg-[#0B0B0D] p-6 border border-white/10 hover:border-primary transition-all duration-300">
+              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">sports_score</span>
+              </div>
+              <h4 class="font-display text-lg font-bold text-white uppercase mb-2 group-hover:text-primary transition-colors">4. Braking &amp; Levers</h4>
+              <p class="font-body text-xs text-neutral-400 leading-relaxed mb-4">CNC anti-drop levers, ceramic/sintered brake pads, master cylinders &amp; brake rotors.</p>
+              <div class="font-code text-[11px] text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <span>VIEW BRAKING PARTS</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </a>
+
+            <!-- Cat 5 -->
+            <a href="steering-bearing.html" class="group bg-[#0B0B0D] p-6 border border-white/10 hover:border-primary transition-all duration-300">
+              <div class="w-12 h-12 rounded bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-2xl">radar</span>
+              </div>
+              <h4 class="font-display text-lg font-bold text-white uppercase mb-2 group-hover:text-primary transition-colors">5. Steering &amp; Bearings</h4>
+              <p class="font-body text-xs text-neutral-400 leading-relaxed mb-4">High-precision tapered roller steering bearing kits, fork oil seals, swingarm bearings &amp; links.</p>
+              <div class="font-code text-[11px] text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                <span>VIEW BEARING PARTS</span>
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== OEM BRAND LOGOS MARQUEE SLIDER ==================== -->
+    <section class="w-full py-16 bg-[#070709] border-y border-white/[0.08] overflow-hidden relative"
+      id="brand-ecosystem">
+      <div
+        class="max-w-[1800px] mx-auto px-6 lg:px-12 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-md border border-white/15 text-white mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold">OEM BRAND
+              ECOSYSTEM</span>
+          </div>
+          <h2 class="font-display text-2xl md:text-4xl font-bold text-white uppercase tracking-tight">
+            GLOBAL OEM &amp; PLATFORM COMPATIBILITY
+          </h2>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center gap-3 font-code text-xs">
+          <button id="marqueePauseBtn" onclick="toggleMarquee()"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#111114] hover:bg-white/10 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-[16px]">pause</span>
+            <span>PAUSE</span>
+          </button>
+          <button id="marqueeSpeedBtn" onclick="toggleMarqueeSpeed()"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#111114] hover:bg-white/10 border border-white/15 text-neutral-300 hover:text-white transition-colors cursor-pointer">
+            <span>1X SPEED</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Marquee Track Wrapper -->
+      <div class="relative w-full overflow-hidden py-3">
+        <!-- Left & Right Fade Gradients -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 md:w-44 bg-gradient-to-r from-[#070709] via-[#070709]/85 to-transparent z-10">
+        </div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 md:w-44 bg-gradient-to-l from-[#070709] via-[#070709]/85 to-transparent z-10">
+        </div>
+
+        <div id="brandMarqueeTrack" class="animate-marquee flex items-center gap-6">
+          <!-- ===== SET 1 ===== -->
+          <!-- HONDA -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/honda.svg" alt="Honda"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">CBR / CRF / ADV</span>
+            </div>
+          </a>
+
+          <!-- YAMAHA -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/yamaha.svg" alt="Yamaha"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">YZF-R / MT / TMAX</span>
+            </div>
+          </a>
+
+          <!-- BMW MOTORRAD -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/bmw.svg" alt="BMW Motorrad"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">S1000RR / R1250GS</span>
+            </div>
+          </a>
+
+          <!-- KAWASAKI -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/kawasaki.svg" alt="Kawasaki"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">NINJA / Z900 / KX</span>
+            </div>
+          </a>
+
+          <!-- CFMOTO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/cfmoto.svg" alt="CFMOTO"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">450SR / 800NK / 800MT</span>
+            </div>
+          </a>
+
+          <!-- QJ MOTOR -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/qjmotor.png" alt="QJ Motor"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">SRK 800RR / SRT 900</span>
+            </div>
+          </a>
+
+          <!-- VOGE -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/voge.png" alt="VOGE"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">525DSX / 900DSX / RR525</span>
+            </div>
+          </a>
+
+          <!-- ZONTES -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/zontes.svg" alt="ZONTES"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">350E / 350D / 703F</span>
+            </div>
+          </a>
+
+          <!-- KYMCO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/kymco.svg" alt="Kymco"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">AK550 / KRV / XCITING</span>
+            </div>
+          </a>
+
+          <!-- SYM -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/sym.svg" alt="SYM"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">MAXSYM TL / DRG BT</span>
+            </div>
+          </a>
+
+          <!-- PIAGGIO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/piaggio.svg" alt="Piaggio"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">BEVERLY / VESPA GTS</span>
+            </div>
+          </a>
+
+          <!-- ===== SET 2 (EXACT DUPLICATE FOR SEAMLESS 100% INFINITE LOOP) ===== -->
+          <!-- HONDA -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/honda.svg" alt="Honda"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">CBR / CRF / ADV</span>
+            </div>
+          </a>
+
+          <!-- YAMAHA -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/yamaha.svg" alt="Yamaha"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">YZF-R / MT / TMAX</span>
+            </div>
+          </a>
+
+          <!-- BMW MOTORRAD -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/bmw.svg" alt="BMW Motorrad"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">S1000RR / R1250GS</span>
+            </div>
+          </a>
+
+          <!-- KAWASAKI -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/kawasaki.svg" alt="Kawasaki"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">NINJA / Z900 / KX</span>
+            </div>
+          </a>
+
+          <!-- CFMOTO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/cfmoto.svg" alt="CFMOTO"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">450SR / 800NK / 800MT</span>
+            </div>
+          </a>
+
+          <!-- QJ MOTOR -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/qjmotor.png" alt="QJ Motor"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">SRK 800RR / SRT 900</span>
+            </div>
+          </a>
+
+          <!-- VOGE -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/voge.png" alt="VOGE"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">525DSX / 900DSX / RR525</span>
+            </div>
+          </a>
+
+          <!-- ZONTES -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/zontes.svg" alt="ZONTES"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">350E / 350D / 703F</span>
+            </div>
+          </a>
+
+          <!-- KYMCO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/kymco.svg" alt="Kymco"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">AK550 / KRV / XCITING</span>
+            </div>
+          </a>
+
+          <!-- SYM -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/sym.svg" alt="SYM"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">MAXSYM TL / DRG BT</span>
+            </div>
+          </a>
+
+          <!-- PIAGGIO -->
+          <a href="products.html"
+            class="group relative flex-none w-[240px] md:w-[270px] bg-[#111114] border border-white/[0.08] hover:border-primary/80 p-6 transition-all duration-300 hover:shadow-[0_12px_30px_rgba(255,46,0,0.25)] hover:-translate-y-1 flex flex-col items-center justify-between text-center h-[165px]">
+            <div class="flex-1 flex items-center justify-center w-full px-4">
+              <img src="image/brands/piaggio.svg" alt="Piaggio"
+                class="h-9 md:h-11 max-w-[160px] w-auto object-contain filter brightness-0 invert opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+            </div>
+            <div
+              class="w-full pt-3 border-t border-white/5 flex items-center justify-center text-[11px] font-code text-neutral-400 group-hover:text-neutral-200">
+              <span class="truncate">BEVERLY / VESPA GTS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMarquee() {
+        const track = document.getElementById('brandMarqueeTrack');
+        const btn = document.getElementById('marqueePauseBtn');
+        if (!track) return;
+        const currentPlayState = window.getComputedStyle(track).animationPlayState;
+        if (currentPlayState === 'paused' || track.style.animationPlayState === 'paused') {
+          track.style.animationPlayState = 'running';
+          if (btn) btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">pause</span><span>PAUSE</span>';
+        } else {
+          track.style.animationPlayState = 'paused';
+          if (btn) btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">play_arrow</span><span>PLAY</span>';
+        }
+      }
+
+      function toggleMarqueeSpeed() {
+        const track = document.getElementById('brandMarqueeTrack');
+        const btn = document.getElementById('marqueeSpeedBtn');
+        if (!track) return;
+        if (track.style.animationDuration === '18s') {
+          track.style.animationDuration = '35s';
+          if (btn) btn.innerText = '1X SPEED';
+        } else {
+          track.style.animationDuration = '18s';
+          if (btn) btn.innerText = '2X SPEED';
+        }
+      }
+    </script>
+
+    <!-- ==================== VISUAL GALLERY: MACRO DETAIL IN PRECISION ==================== -->
+    <section class="w-full py-20 bg-[#070709] border-y border-white/[0.06]" id="detail-gallery">
+      <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold block mb-2">PRECISION
+              IN DETAIL</span>
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">
+              MICRON-LEVEL CRAFTSMANSHIP
+            </h2>
+          </div>
+          <div class="font-code text-xs text-neutral-400">
+            SURFACE ROUGHNESS: Ra ≤ 0.15 μm · LASER ENGRAVED SERIAL TRACEABILITY
+          </div>
+        </div>
+        <!-- Large Visual Focus: Close-Up Piston & Cylinder Architecture -->
+        <div class="relative w-full h-[520px] lg:h-[620px] overflow-hidden border border-white/10 group">
+          <img alt="Precision CNC-machined titanium racing piston and billet forged connecting rod assembly"
+            class="w-full h-full object-cover object-center filter brightness-95 contrast-110 transition-transform duration-1000 ease-out group-hover:scale-105"
+            src="image/micron_craftsmanship.png">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent"></div>
+          <!-- Telemetry Callout Overlay Box -->
+          <div
+            class="absolute bottom-8 left-8 max-w-lg bg-[#0B0B0D]/85 backdrop-blur-md border border-white/15 p-6 shadow-2xl">
+            <div class="flex items-center gap-2 font-code text-[11px] text-primary uppercase tracking-widest mb-2">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              <span class="">TOPOLOGICAL OPTIMIZATION</span>
+            </div>
+            <h4 class="font-display text-xl font-bold text-white uppercase mb-3">FEA Stress-Relieved Crown</h4>
+            <div class="grid grid-cols-3 gap-4 font-code text-xs pt-3 border-t border-white/10">
+              <div>
+                <div class="text-neutral-400 text-[10px]">WEIGHT</div>
+                <div class="text-white font-bold mt-0.5">-18% OE</div>
+              </div>
+              <div>
+                <div class="text-neutral-400 text-[10px]">HEAT THRESHOLD</div>
+                <div class="text-white font-bold mt-0.5">380°C</div>
+              </div>
+              <div>
+                <div class="text-neutral-400 text-[10px]">TENSILE RATING</div>
+                <div class="text-white font-bold mt-0.5">505 MPa</div>
+              </div>
+            </div>
+          </div>
+          <!-- Macro Badge Top Right -->
+          <div
+            class="absolute top-8 right-8 font-code text-xs text-white bg-black/60 backdrop-blur-md border border-white/15 px-4 py-2 uppercase tracking-widest">
+            OPTICAL PROFILOMETRY INSPECTION PASS
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== MANUFACTURING LOOKBOOK & METROLOGY HUD ==================== -->
+    <section class="w-full py-28 lg:py-36 bg-[#0B0B0D]" id="manufacturing">
+      <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+        <div class="mb-14">
+          <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold block mb-2">SCALE &amp;
+            TOLERANCE AUDIT</span>
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-white uppercase tracking-tight">
+            SMART PLANT &amp; METROLOGY
+          </h2>
+        </div>
+        <!-- Wide Panoramic Facility Canvas with Glass Metrology Overlay -->
+        <div class="relative w-full h-[620px] lg:h-[720px] overflow-hidden border border-white/10">
+          <img alt="Mazak 5-axis CNC machining centers and Zeiss 3D CMM metrology inspection station"
+            class="w-full h-full object-cover object-center filter brightness-90 contrast-105"
+            src="image/cnc_smart_plant.png">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/30 to-transparent"></div>
+          <div class="absolute inset-0 bg-black/40"></div>
+          <!-- Floating Heads-Up Data Dashboard (Minimal & Authoritative) -->
+          <div
+            class="absolute inset-x-6 bottom-6 lg:inset-x-12 lg:bottom-12 grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <!-- Main HUD Card -->
+            <div class="lg:col-span-12 bg-[#111114]/90 backdrop-blur-xl border border-white/15 p-6 lg:p-8">
+              <div class="flex flex-wrap items-center justify-between pb-4 mb-6 border-b border-white/10 gap-4">
+                <div class="font-display text-lg font-bold text-white uppercase tracking-wider">PRECISION METROLOGY
+                </div>
+              </div>
+              <!-- Comparison Compact Grid -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-6 font-code">
+                <div>
+                  <div class="text-[10px] text-neutral-400 uppercase tracking-wider">BORE SPHERICITY</div>
+                  <div class="text-base text-primary font-bold mt-1">≤ 0.002 mm</div>
+                  <div class="text-[11px] text-neutral-500">Tier-2: 0.015 mm</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-neutral-400 uppercase tracking-wider">THERMAL CEILING</div>
+                  <div class="text-base text-primary font-bold mt-1">380°C</div>
+                  <div class="text-[11px] text-neutral-500">Tier-2: 290°C</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-neutral-400 uppercase tracking-wider">TENSILE YIELD</div>
+                  <div class="text-base text-primary font-bold mt-1">505 MPa</div>
+                  <div class="text-[11px] text-neutral-500">Tier-2: 320 MPa</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-neutral-400 uppercase tracking-wider">CMM VERIFICATION</div>
+                  <div class="text-base text-primary font-bold mt-1">100% AUDIT</div>
+                  <div class="text-[11px] text-neutral-500">Tier-2: 5% Spot</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== STREAMLINED SUPPLY & RFQ CONSOLE ==================== -->
+    <section class="w-full py-24 lg:py-32 border-t border-white/[0.08]" id="workflow">
+      <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+        <!-- Streamlined 4-Step Pipeline -->
+
+        <!-- Compact High-Efficiency RFQ Module -->
+        <div class="bg-[#111114] border border-white/[0.1] p-8 lg:p-12" id="rfq-desk">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div class="lg:col-span-5">
+              <span class="font-code text-xs uppercase tracking-[0.28em] text-primary font-semibold block mb-2">B2B
+                ENGAGEMENT DESK</span>
+              <h3 class="font-display text-3xl font-bold text-white uppercase tracking-tight mb-4">
+                SPECIFICATION &amp; RFQ
+              </h3>
+              <p class="font-body text-sm text-neutral-400 leading-relaxed mb-6">
+                Direct NDA engineering assessment for motorcycle OEMs, high-end private labels, and championship race
+                teams.
+              </p>
+              <div class="space-y-2 font-code text-xs text-neutral-300">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  <span class="">NDA Protected File Exchange</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  <span class="">Technical Quote within 1 Business Day</span>
+                </div>
+              </div>
+            </div>
+            <!-- Streamlined RFQ Direct Contact Email -->
+            <div class="lg:col-span-7 bg-[#0B0B0D] border border-white/15 p-8 lg:p-10 rounded-xl flex flex-col justify-between gap-6 shadow-2xl">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-2 font-code text-xs text-primary uppercase tracking-widest font-semibold">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  <span>DIRECT EMAIL INQUIRY GATEWAY</span>
+                </div>
+                <h4 class="font-display text-2xl font-bold text-white uppercase tracking-tight">CONTACT OUR B2B DESK</h4>
+                <p class="font-body text-xs text-neutral-400 leading-relaxed">
+                  Please send all RFQ requests, technical drawings, CAD specifications, or volume distribution inquiries directly to our team.
+                </p>
+              </div>
+              
+              <div class="p-5 bg-[#141417] border border-white/10 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-4 my-1">
+                <div class="flex items-center gap-3">
+                  <div class="p-2.5 bg-primary/10 border border-primary/20 rounded-md text-primary">
+                    <span class="material-symbols-outlined text-[24px]">mail</span>
+                  </div>
+                  <div>
+                    <div class="font-code text-[10px] text-neutral-400 uppercase tracking-widest">OFFICIAL CONTACT EMAIL</div>
+                    <a href="mailto:info@linccore.com" class="font-code text-lg font-bold text-white hover:text-primary transition-colors tracking-wide">info@linccore.com</a>
+                  </div>
+                </div>
+                <a href="mailto:info@linccore.com" class="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-primary-container to-[#ff2e00] hover:brightness-110 text-white font-display text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 shadow-[0_5px_20px_rgba(255,86,53,0.3)] text-center rounded">
+                  SEND EMAIL
+                </a>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4 text-xs font-code text-neutral-400 pt-3 border-t border-white/10">
+                <div>
+                  <span class="text-white font-semibold block">RESPONSE TIME</span>
+                  <span>Within 1 Business Day</span>
+                </div>
+                <div>
+                  <span class="text-white font-semibold block">FILE COMPATIBILITY</span>
+                  <span>.STEP / .IGES / .PDF CAD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ==================== MINIMAL FOOTER ==================== -->
+  <footer class="border-t border-white/10 bg-[#0a0a0c] pt-16 pb-12 text-sm text-neutral-400">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4"><a class="inline-block" href="index.html"><img alt="LINCCORE"
+              class="h-10 md:h-12 w-auto object-contain" src="image/logo.png"></a>
+          <p class="text-xs uppercase tracking-widest text-neutral-400 font-mono">Tier-1 Motorsport &amp; OEM
+            Engineering Partner</p>
+          <p class="text-xs text-neutral-400 max-w-sm leading-relaxed">High-precision powertrain, drivetrain, and
+            metrology systems engineered for championship racing constructors and global motorcycle OEMs.</p>
+          <div class="flex items-center gap-3 pt-2"></div>
+        </div>
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Engineering Hubs</h4>
+          <div class="space-y-3 text-xs">
+            <div>
+              <div class="text-white font-medium">Milan Hub // EU</div>
+            </div>
+            <div>
+              <div class="text-white font-medium">China Hub // APAC</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Navigation</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li class=""><a class="hover:text-white transition-colors" href="index.html">HOME</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="products.html">PRODUCTS</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="about us.html">ABOUT US</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="news.html">Q&amp;A</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="connect.html">CONTACTS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Governance &amp; Specs</h4>
+          <ul class="space-y-2.5 text-xs text-neutral-400">
+            <li class=""><a class="hover:text-white transition-colors cursor-pointer text-white font-medium flex items-center gap-1.5" onclick="openPrivacyModal('privacy')"><span class="w-1.5 h-1.5 rounded-full bg-[#ff2e00]"></span>Privacy Policy (隐私政策)</a></li>
+            <li class="pl-3 border-l border-white/10 space-y-1.5 my-1">
+              <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" onclick="openPrivacyModal('terms')">├ Service Terms (服务条款)</a></div>
+              <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" onclick="openPrivacyModal('cookies')">├ Cookie Policy (Cookie 政策)</a></div>
+              <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" onclick="openPrivacyModal('gdpr')">├ Data Protection / GDPR (数据保护)</a></div>
+              <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" onclick="openPrivacyModal('ip')">└ Intellectual Property (知识产权)</a></div>
+            </li>
+            <li class=""><a class="hover:text-white transition-colors" href="#">Confidential OEM NDA</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="#">Code of Ethics</a></li>
+            <li class=""><a class="hover:text-white transition-colors" href="#">B2B RFQ Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-400 font-mono gap-4">
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#ff2e00] inline-block"></span><span
+            class="">© 2025 LINCCORE S.p.A. — All rights reserved.</span></div>
+        <div class="flex items-center gap-6"><span class="">MILAN TECH HUB • WENZHOU ADVANCED MFG</span><span
+            class="text-neutral-400">STATUS: TELEMETRY ACTIVE</span></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Privacy Policy & Terms Interactive Modal -->
+  <div id="privacy-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-4 transition-all duration-300 opacity-0">
+    <div class="relative w-full max-w-4xl max-h-[90vh] bg-[#0E0F12] border border-white/15 rounded-2xl shadow-2xl flex flex-col overflow-hidden text-neutral-300">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#14151A]">
+        <div class="flex items-center gap-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#ff2e00] animate-pulse"></span>
+          <h3 class="font-display font-bold text-lg text-white uppercase tracking-wider" id="privacy-modal-title">LINCCORE Legal &amp; Privacy Governance</h3>
+        </div>
+        <button onclick="closePrivacyModal()" class="text-neutral-400 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      
+      <!-- Modal Navigation Tabs -->
+      <div class="flex border-b border-white/10 bg-[#0B0C0E] px-6 gap-2 md:gap-6 overflow-x-auto text-xs font-mono">
+        <button onclick="switchPrivacyTab('privacy')" id="tab-btn-privacy" class="py-3 px-2 text-[#ff2e00] border-b-2 border-[#ff2e00] font-semibold whitespace-nowrap transition-colors">1. PRIVACY POLICY</button>
+        <button onclick="switchPrivacyTab('terms')" id="tab-btn-terms" class="py-3 px-2 text-neutral-400 hover:text-white border-b-2 border-transparent whitespace-nowrap transition-colors">2. SERVICE TERMS</button>
+        <button onclick="switchPrivacyTab('cookies')" id="tab-btn-cookies" class="py-3 px-2 text-neutral-400 hover:text-white border-b-2 border-transparent whitespace-nowrap transition-colors">3. COOKIE POLICY</button>
+        <button onclick="switchPrivacyTab('gdpr')" id="tab-btn-gdpr" class="py-3 px-2 text-neutral-400 hover:text-white border-b-2 border-transparent whitespace-nowrap transition-colors">4. GDPR DATA PROTECTION</button>
+        <button onclick="switchPrivacyTab('ip')" id="tab-btn-ip" class="py-3 px-2 text-neutral-400 hover:text-white border-b-2 border-transparent whitespace-nowrap transition-colors">5. IP &amp; TRADEMARKS</button>
+      </div>
+
+      <!-- Modal Content -->
+      <div class="p-6 md:p-8 overflow-y-auto space-y-6 text-sm leading-relaxed max-h-[62vh] font-sans" id="privacy-modal-body">
+        <!-- Content populated dynamically -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="flex flex-col sm:flex-row items-center justify-between px-6 py-4 border-t border-white/10 bg-[#14151A] text-xs text-neutral-400 font-mono gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>SECURITY LEVEL: ENCRYPTED B2B DATA PORTAL</span>
+        </div>
+        <button onclick="closePrivacyModal()" class="w-full sm:w-auto px-6 py-2.5 bg-[#ff2e00] text-white font-semibold rounded-lg hover:bg-[#ff2e00]/80 transition-colors uppercase tracking-wider text-xs">
+          I ACKNOWLEDGE &amp; AGREE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const privacyTabContents = {
+    privacy: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white font-bold text-base border-b border-white/10 pb-2">
+          <span class="text-[#ff2e00]">§ 1.</span> Global Privacy Policy & OEM Confidentiality (隐私政策条款)
+        </div>
+        <p class="text-neutral-300">LINCCORE S.p.A. respects the confidentiality and data integrity of global motorcycle OEMs, tier-1 racing constructors, and industrial partners. This privacy statement outlines how technical telemetry, account information, and inquiry data are collected and protected.</p>
+        
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">1.1 Information Collection Scope (信息收集范围)</h5>
+          <ul class="list-disc list-inside text-xs text-neutral-400 space-y-1">
+            <li>Corporate account registration and OEM engineering contacts</li>
+            <li>Technical RFQ specifications, CAD files, and tolerance requirements</li>
+            <li>Telemetry diagnostics for smart powertrain components and sensors</li>
+            <li>Web browser logs, IP routing metadata, and session identifiers</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">1.2 NDA & Proprietary Data Handling (保密与专有数据处理)</h5>
+          <p class="text-xs text-neutral-400">All technical drawings and specifications submitted to LINCCORE S.p.A. are strictly protected under mutual Non-Disclosure Agreements (NDA). Access is compartmentalized and limited to authorized engineering personnel in Milan and Wenzhou.</p>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">1.3 Data Storage & Encryption (数据存储与安全加密)</h5>
+          <p class="text-xs text-neutral-400">All server communications employ TLS 1.3 protocol encryption. Customer design files are stored in ISO/IEC 27001 certified cloud vaults with multi-factor hardware access controls.</p>
+        </div>
+      </div>
+    `,
+    terms: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white font-bold text-base border-b border-white/10 pb-2">
+          <span class="text-[#ff2e00]">§ 2.</span> Terms of Service & B2B Procurement (服务与交易条款)
+        </div>
+        <p class="text-neutral-300">By accessing the LINCCORE B2B platform or requesting technical quotations, industrial partners agree to adhere to the following contractual terms.</p>
+        
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">2.1 RFQ Quotations & Validity (询价与报价时效)</h5>
+          <p class="text-xs text-neutral-400">Formal technical quotations generated via the B2B portal are valid for 30 calendar days. Prices are subject to raw material index adjustments (aluminum, copper, rare earth magnets) prior to final purchase order confirmation.</p>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">2.2 Quality Standards & Warranty (质量标准与联保)</h5>
+          <p class="text-xs text-neutral-400">All components are manufactured to IATF 16949 / ISO 9001 automotive quality benchmarks. Standard OEM warranty covers structural or electrical manufacturing defects for 12 months or 20,000 km from vehicle assembly date.</p>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">2.3 Intellectual Property & Tooling Ownership (模具与工装产权)</h5>
+          <p class="text-xs text-neutral-400">Custom molds and specialized manufacturing tooling developed specifically for customer proprietary designs remain customer property upon full amortization of tooling fees.</p>
+        </div>
+      </div>
+    `,
+    cookies: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white font-bold text-base border-b border-white/10 pb-2">
+          <span class="text-[#ff2e00]">§ 3.</span> Cookie Policy & Session Tracking (Cookie 政策说明)
+        </div>
+        <p class="text-neutral-300">We utilize functional cookies and essential local storage elements to maintain secure B2B session states and optimize technical platform performance.</p>
+        
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">3.1 Essential Technical Cookies (核心必要的 Cookie)</h5>
+          <p class="text-xs text-neutral-400">Enables secure login sessions, preserves temporary CAD/RFQ file uploads, and maintains user language preferences. These cannot be disabled without affecting site functionality.</p>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">3.2 Performance Telemetry (性能诊断与分析)</h5>
+          <p class="text-xs text-neutral-400">Collects aggregated, non-identifying telemetry regarding page render speeds, search query efficiency, and API gateway response times.</p>
+        </div>
+      </div>
+    `,
+    gdpr: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white font-bold text-base border-b border-white/10 pb-2">
+          <span class="text-[#ff2e00]">§ 4.</span> GDPR & Global Data Protection Compliance (数据保护与 GDPR)
+        </div>
+        <p class="text-neutral-300">LINCCORE S.p.A. fully complies with the European Union General Data Protection Regulation (GDPR - Regulation EU 2016/679) and global data privacy frameworks.</p>
+        
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">4.1 Data Subject Rights (数据主体权利)</h5>
+          <ul class="list-disc list-inside text-xs text-neutral-400 space-y-1">
+            <li><strong>Right to Access:</strong> Request full transcripts of stored corporate and personal data</li>
+            <li><strong>Right to Erasure (Right to be Forgotten):</strong> Demand purging of account data upon contract conclusion</li>
+            <li><strong>Right to Rectification:</strong> Instantly update contact or billing information via portal settings</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">4.2 Cross-Border Transfers (跨国数据传输合规)</h5>
+          <p class="text-xs text-neutral-400">Data transfers between our Milan R&D center and APAC manufacturing operations strictly execute under EU Standard Contractual Clauses (SCCs) to ensure equivalent protection.</p>
+        </div>
+      </div>
+    `,
+    ip: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-white font-bold text-base border-b border-white/10 pb-2">
+          <span class="text-[#ff2e00]">§ 5.</span> Intellectual Property & Trademark Notice (知识产权与商标)
+        </div>
+        <p class="text-neutral-300">Notice regarding proprietary patents, design copyrights, and third-party OEM trademark usage on this platform.</p>
+        
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">5.1 LINCCORE Patents & Designs (专利与版权归属)</h5>
+          <p class="text-xs text-neutral-400">All patented starter motor winding layouts, metrology algorithms, clutch friction lining geometry, and CAD renderings showcased are protected under international copyright and patent law.</p>
+        </div>
+
+        <div class="bg-[#14151B] p-4 rounded-xl border border-white/10 space-y-2">
+          <h5 class="text-white font-semibold text-xs uppercase font-mono tracking-wider">5.2 OEM Compatibility Disclaimer (第三方商标免责声明)</h5>
+          <p class="text-xs text-neutral-400">All third-party brand names, logos, and model designations (e.g., Honda, Yamaha, BMW, Ducati, KTM, CFMOTO, QJMotor, Voge) are trademarks of their respective owners, referenced exclusively for component fitment cross-referencing.</p>
+        </div>
+      </div>
+    `
+  };
+
+  function openPrivacyModal(tab = 'privacy') {
+    const modal = document.getElementById('privacy-modal');
+    if (!modal) return;
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+    }, 10);
+    switchPrivacyTab(tab);
+  }
+
+  function closePrivacyModal() {
+    const modal = document.getElementById('privacy-modal');
+    if (!modal) return;
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  function switchPrivacyTab(tabKey) {
+    const body = document.getElementById('privacy-modal-body');
+    if (body && privacyTabContents[tabKey]) {
+      body.innerHTML = privacyTabContents[tabKey];
+    }
+    
+    const tabs = ['privacy', 'terms', 'cookies', 'gdpr', 'ip'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-btn-' + t);
+      if (btn) {
+        if (t === tabKey) {
+          btn.className = 'py-3 px-2 text-[#ff2e00] border-b-2 border-[#ff2e00] font-semibold whitespace-nowrap transition-colors';
+        } else {
+          btn.className = 'py-3 px-2 text-neutral-400 hover:text-white border-b-2 border-transparent whitespace-nowrap transition-colors';
+        }
+      }
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (['privacy', 'terms', 'cookies', 'gdpr', 'ip'].includes(hash)) {
+      openPrivacyModal(hash);
+    }
+  });
+  </script>
+
+</body>
+
+</html>

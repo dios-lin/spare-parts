@@ -1,0 +1,450 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #131315;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2a2c;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff5635;
+    }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#e5e1e4",
+          "surface-container-high": "#2a2a2c",
+          "tertiary-container": "#ff5168",
+          "inverse-on-surface": "#313032",
+          "on-secondary": "#233143",
+          "tertiary": "#ffb3b6",
+          "on-surface-variant": "#e9bcb3",
+          "background": "#131315",
+          "surface-container-lowest": "#0e0e10",
+          "on-tertiary": "#68001a",
+          "inverse-surface": "#e5e1e4",
+          "on-secondary-fixed": "#0d1c2d",
+          "on-primary-fixed": "#3e0500",
+          "surface-tint": "#ffb4a5",
+          "secondary-fixed-dim": "#b9c8de",
+          "on-error-container": "#ffdad6",
+          "secondary-container": "#39485a",
+          "surface-container-highest": "#353437",
+          "surface-container": "#201f21",
+          "outline-variant": "#5e3f38",
+          "on-tertiary-container": "#5b0015",
+          "on-tertiary-fixed": "#40000c",
+          "on-secondary-fixed-variant": "#39485a",
+          "primary-fixed-dim": "#ffb4a5",
+          "on-primary-container": "#580900",
+          "on-error": "#690005",
+          "primary-fixed": "#ffdad3",
+          "on-tertiary-fixed-variant": "#920028",
+          "primary-container": "#ff5635",
+          "on-secondary-container": "#a7b6cc",
+          "on-primary": "#640c00",
+          "primary": "#ffb4a5",
+          "secondary": "#b9c8de",
+          "secondary-fixed": "#d4e4fa",
+          "tertiary-fixed": "#ffdada",
+          "surface-variant": "#353437",
+          "surface-bright": "#39393b",
+          "surface-container-low": "#1c1b1d",
+          "tertiary-fixed-dim": "#ffb3b6",
+          "error": "#ffb4ab",
+          "on-primary-fixed-variant": "#8d1500",
+          "inverse-primary": "#b91f00",
+          "surface-dim": "#131315",
+          "on-background": "#e5e1e4",
+          "error-container": "#93000a",
+          "surface": "#131315",
+          "outline": "#af877f"
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        spacing: {
+          "unit-1": "0.25rem",
+          "unit-2": "0.5rem",
+          "unit-3": "0.75rem",
+          "unit-4": "1rem",
+          "unit-6": "1.5rem",
+          "unit-8": "2rem",
+          "unit-12": "3rem",
+          "unit-16": "4rem",
+          "max-width": "1680px"
+        },
+        fontFamily: {
+          "display": ["Space Grotesk", "sans-serif"],
+          "headline": ["Space Grotesk", "sans-serif"],
+          "body": ["Geist", "sans-serif"],
+          "code": ["JetBrains Mono", "monospace"],
+          "headline-xl": ["Space Grotesk"],
+          "headline-lg": ["Space Grotesk"],
+          "headline-md": ["Space Grotesk"],
+          "headline-sm": ["Space Grotesk"],
+          "body-lg": ["Geist"],
+          "body-md": ["Geist"],
+          "body-sm": ["Geist"],
+          "code-metric": ["JetBrains Mono"],
+          "code-data": ["JetBrains Mono"],
+          "label-caps": ["Space Grotesk"]
+        }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- NAVIGATION BAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0B0B0D]/85 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300">
+  <div class="max-w-[1800px] h-20 mx-auto px-6 lg:px-12 flex items-center justify-between">
+    <a class="flex items-center gap-3.5 group" href="index.html"><img alt="LINCCORE" class="h-10 md:h-12 w-auto object-contain select-none" src="image/logo.png"></a>
+    <nav class="hidden lg:flex items-center gap-10 font-code text-xs tracking-[0.2em] uppercase">
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="index.html">Home</a>
+      <a class="text-primary-container hover:text-primary transition-colors duration-200 font-bold" href="products.html">Products</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="about us.html">About Us</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="news.html">Q&amp;A</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="connect.html">Contacts</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-[#0B0B0D] hover:bg-primary hover:text-white font-display text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-300" href="index.html#rfq-desk">
+        <span class="">B2B PORTAL / RFQ</span>
+        <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="w-full pt-20 flex-1 flex flex-col">
+
+<!-- HERO TITLE & CATEGORY FILTER TABS -->
+<section class="w-full px-unit-6 pt-unit-8 pb-unit-6">
+<div class="max-w-[1680px] mx-auto flex flex-col gap-unit-6">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+<div>
+<h1 class="font-headline-xl text-3xl lg:text-4xl text-on-surface uppercase tracking-tight font-bold">PRODUCTS &amp; PRECISION PARTS.</h1>
+</div>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 px-unit-5 py-unit-2.5 bg-primary-container text-on-primary-container font-headline-sm text-[13px] uppercase tracking-wider font-bold rounded hover:brightness-110 transition-all shadow-md" data-path="b2b-portal-rfq" href="#">
+<span class="material-symbols-outlined text-[18px]">request_quote</span>
+<span class="">PARTS RFQ</span>
+</a>
+<a class="inline-flex items-center gap-2 px-unit-4 py-unit-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface border border-surface-container-high font-headline-sm text-[13px] uppercase tracking-wider font-bold rounded transition-colors" href="#catalog-download">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">CATALOG PDF</span>
+</a>
+</div>
+</div>
+<!-- EXACT 8 CATEGORY FILTER TABS -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 pt-2 border-b border-surface-container-high/40 scrollbar-none">
+<a href="products.html" class="px-unit-4 py-unit-2 rounded bg-surface-container-high text-primary font-label-caps text-[11px] font-bold uppercase tracking-wider shrink-0 transition-colors">ALL CATEGORIES</a>
+<a href="starter-motor.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">STARTER MOTOR</a>
+<a href="crankshaft.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">CRANKSHAFT</a>
+<a href="steering-bearing.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">STEERING BEARING</a>
+<a href="lever.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">LEVER</a>
+<a href="temperature-sensor.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">TEMPERATURE SENSOR</a>
+<a href="stator.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">STATOR</a>
+<a href="cylinder.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">CYLINDER</a>
+<a href="clutch.html" class="px-unit-4 py-unit-2 rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-caps text-[11px] font-semibold uppercase tracking-wider shrink-0 transition-colors">CLUTCH</a>
+</div>
+</div>
+</section>
+<!-- 8 PRODUCT SHOWCASE CARDS (TEXT ONLY TITLES) -->
+<section class="w-full px-unit-6 pb-unit-12">
+<div class="max-w-[1680px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit-6">
+<!-- 1. STARTER MOTOR -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="starter-motor.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Starter Motor" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Starter Motor.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="starter-motor.html" class="hover:text-primary transition-colors">Starter Motor</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="starter-motor.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 2. CRANKSHAFT -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="crankshaft.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Crankshaft" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Crankshaft.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="crankshaft.html" class="hover:text-primary transition-colors">Crankshaft</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="crankshaft.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 3. STEERING BEARING -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="steering-bearing.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Steering Bearing" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Steering Bearing.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="steering-bearing.html" class="hover:text-primary transition-colors">Steering Bearing</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="steering-bearing.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 4. LEVER -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="lever.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="OEM Stock Brake &amp; Clutch Lever" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/lever.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="lever.html" class="hover:text-primary transition-colors">Brake &amp; Clutch Lever</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="lever.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 5. TEMPERATURE SENSOR -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="temperature-sensor.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Temperature Sensor" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/temperature sensor.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="temperature-sensor.html" class="hover:text-primary transition-colors">Temperature Sensor</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="temperature-sensor.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 6. STATOR -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="stator.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Stator" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Magneto Stator.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="stator.html" class="hover:text-primary transition-colors">Magneto Stator</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="stator.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 7. CYLINDER -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="cylinder.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Cylinder" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Cylinder &amp; Piston.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="cylinder.html" class="hover:text-primary transition-colors">Cylinder &amp; Piston</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="cylinder.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+<!-- 8. CLUTCH -->
+<div class="group bg-surface-container rounded-2xl border border-surface-container-high/60 hover:border-primary/50 transition-all flex flex-col justify-between shadow-lg overflow-hidden">
+<a href="clutch.html" class="relative aspect-[4/3] overflow-hidden bg-surface-container-lowest block p-0 flex items-center justify-center">
+<img alt="Clutch" class="w-full h-full object-contain scale-125 group-hover:scale-140 transition-transform duration-500" src="image/Clutch.png">
+</a>
+<div class="p-unit-5 flex flex-col gap-3 flex-1 justify-between">
+<h3 class="font-headline-sm text-[18px] text-on-surface font-bold tracking-tight"><a href="clutch.html" class="hover:text-primary transition-colors">Slipper Clutch</a></h3>
+<div class="flex items-center justify-end pt-2 border-t border-surface-container-high/40">
+<a class="inline-flex items-center gap-1.5 font-label-caps text-[11px] text-primary hover:text-white uppercase tracking-wider font-bold transition-colors" href="clutch.html"><span class="inline-flex items-center gap-1"><span>MORE</span><span class="material-symbols-outlined text-[15px]">arrow_forward</span></span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK DOWNLOAD & CUSTOM OEM B2B SECTION (UPDATED FOR 8 CATEGORIES) -->
+<section class="w-full bg-surface-container-lowest/60 border-t border-surface-container-high/40 py-unit-12 px-unit-6" id="catalog-download">
+<div class="max-w-[1680px] mx-auto grid grid-cols-1 gap-unit-8">
+<!-- 2026 COMPLETE OEM CATALOGUE -->
+<div class="p-unit-8 rounded-2xl bg-surface-container border border-surface-container-high/60 flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-[11px] text-primary font-bold tracking-widest uppercase">DIGITAL DOCUMENTATION &amp; SPECIFICATIONS</span>
+<h3 class="font-headline-lg text-2xl text-on-surface font-bold">2026 COMPLETE OEM CATALOGUE DOWNLOAD</h3>
+<p class="text-body-sm text-on-surface-variant font-body">Download individual component CAD &amp; technical specification data sheets.</p>
+</div>
+<div class="flex flex-col gap-3 pt-2">
+<div class="font-label-caps text-[11px] text-on-surface font-bold tracking-wider uppercase flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>INDIVIDUAL COMPONENT SPECIFICATION SHEETS &amp; CAD DATA</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+<a href="image/Starter_Motor_Spec.pdf" download="Starter_Motor_Spec.pdf" onclick="alert('Downloading Starter Motor Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Starter Motor</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (2.4MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Crankshaft_Spec.pdf" download="Crankshaft_Spec.pdf" onclick="alert('Downloading Crankshaft Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Crankshaft Assembly</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (3.1MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Steering_Bearing_Spec.pdf" download="Steering_Bearing_Spec.pdf" onclick="alert('Downloading Steering Bearing Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Steering Bearing</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (1.8MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/lever.png" download="Brake_Clutch_Lever_Spec.png" onclick="alert('Downloading Brake &amp; Clutch Lever Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Brake &amp; Clutch Lever</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (1.5MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Temperature_Sensor_Spec.pdf" download="Temperature_Sensor_Spec.pdf" onclick="alert('Downloading Temperature Sensor Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Temperature Sensor</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (1.2MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Magneto_Stator_Spec.pdf" download="Magneto_Stator_Spec.pdf" onclick="alert('Downloading Magneto Stator Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Magneto Stator</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (2.8MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Cylinder_Piston_Spec.pdf" download="Cylinder_Piston_Spec.pdf" onclick="alert('Downloading Cylinder &amp; Piston Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Cylinder &amp; Piston</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (4.2MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+<a href="image/Clutch.png" download="Slipper_Clutch_Spec.png" onclick="alert('Downloading Slipper Clutch Spec &amp; CAD Data...');" class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-surface-container-high/60 hover:border-primary/60 hover:bg-surface-container-high/40 transition-all group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-on-surface group-hover:text-white">Slipper Clutch</span>
+<span class="text-[10px] font-mono text-on-surface-variant">PDF / CAD (3.5MB)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:text-primary group-hover:translate-x-0.5 transition-transform">download</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CUSTOM OEM CAD & PROTOTYPE -->
+</div>
+</section>
+</main>
+<!-- STANDARD FOOTER -->
+<footer class="border-t border-white/10 bg-[#0a0a0c] pt-16 pb-12 text-sm text-neutral-400">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+      <div class="lg:col-span-2 space-y-4">
+        <a href="#" class="inline-block">
+          <img src="image/logo.png" alt="LINCCORE" class="h-10 w-auto object-contain">
+        </a>
+        <p class="text-xs uppercase tracking-widest text-neutral-400 font-mono">Tier-1 Motorsport &amp; OEM Engineering Partner</p>
+        <p class="text-xs text-neutral-400 max-w-sm leading-relaxed">
+          High-precision powertrain, drivetrain, and metrology systems engineered for championship racing constructors and global motorcycle OEMs.
+        </p>
+        <div class="flex items-center gap-3 pt-2"></div>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Engineering Hubs</h4>
+        <div class="space-y-4 text-xs">
+          <div>
+            <div class="text-white font-medium">Milan Hub // EU</div>
+          </div>
+          <div>
+            <div class="text-white font-medium">China Hub // APAC</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Navigation</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li class=""><a href="index.html" class="hover:text-white transition-colors">HOME</a></li>
+          <li class=""><a href="products.html" class="hover:text-white transition-colors text-white font-bold">PRODUCTS</a></li>
+          <li class=""><a href="about us.html" class="hover:text-white transition-colors">ABOUT US</a></li>
+          <li class=""><a href="news.html" class="hover:text-white transition-colors">Q&amp;A</a></li>
+          <li class=""><a href="connect.html" class="hover:text-white transition-colors">CONTACTS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Governance &amp; Specs</h4>
+        <ul class="space-y-2.5 text-xs text-neutral-400">
+          <li class=""><a class="hover:text-white transition-colors cursor-pointer text-white font-medium flex items-center gap-1.5" href="index.html#privacy"><span class="w-1.5 h-1.5 rounded-full bg-[#ff2e00]"></span>Privacy Policy (隐私政策)</a></li>
+          <li class="pl-3 border-l border-white/10 space-y-1.5 my-1">
+            <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" href="index.html#terms">├ Service Terms (服务条款)</a></div>
+            <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" href="index.html#cookies">├ Cookie Policy (Cookie 政策)</a></div>
+            <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" href="index.html#gdpr">├ Data Protection / GDPR (数据保护)</a></div>
+            <div><a class="hover:text-white transition-colors cursor-pointer text-[11px] text-neutral-400 hover:text-neutral-200" href="index.html#ip">└ Intellectual Property (知识产权)</a></div>
+          </li>
+          <li class=""><a href="#" class="hover:text-white transition-colors">Confidential OEM NDA</a></li>
+          <li class=""><a href="#" class="hover:text-white transition-colors">Code of Ethics</a></li>
+          <li class=""><a href="#" class="hover:text-white transition-colors">B2B RFQ Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-400 font-mono gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#ff2e00] inline-block"></span>
+        <span class="">© 2025 LINCCORE S.p.A. — All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="">MILAN TECH HUB • WENZHOU ADVANCED MFG</span>
+        <span class="text-neutral-400">STATUS: TELEMETRY ACTIVE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+</body></html>

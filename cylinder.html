@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cylinder &amp; Piston Precision Part List &amp; Specs | LINCCORE Motorsport</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  @layer base { html, body { margin: 0; padding: 0; min-height: 100vh; } }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #131315; }
+  ::-webkit-scrollbar-thumb { background: #2a2a2c; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #ff5635; }
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#ffb4a5",
+        "primary-container": "#ff5635",
+        "on-primary-container": "#580900",
+        "surface": "#131315",
+        "surface-container-lowest": "#0e0e10",
+        "surface-container-low": "#1c1b1d",
+        "surface-container": "#201f21",
+        "surface-container-high": "#2a2a2c",
+        "surface-container-highest": "#353437",
+        "on-surface": "#e5e1e4",
+        "on-surface-variant": "#e9bcb3"
+      },
+      fontFamily: {
+        "display": ["Space Grotesk", "sans-serif"],
+        "headline": ["Space Grotesk", "sans-serif"],
+        "body": ["Geist", "sans-serif"],
+        "code": ["JetBrains Mono", "monospace"],
+        "mono": ["JetBrains Mono", "monospace"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0B0B0D]/85 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300">
+  <div class="max-w-[1800px] h-20 mx-auto px-6 lg:px-12 flex items-center justify-between">
+    <a class="flex items-center gap-3.5 group" href="index.html"><img alt="LINCCORE" class="h-10 md:h-12 w-auto object-contain select-none" src="image/logo.png"></a>
+    <nav class="hidden lg:flex items-center gap-10 font-code text-xs tracking-[0.2em] uppercase">
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="index.html">Home</a>
+      <a class="text-primary-container hover:text-primary transition-colors duration-200 font-bold" href="products.html">Products</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="about us.html">About Us</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="news.html">Q&amp;A</a>
+      <a class="text-neutral-400 hover:text-white transition-colors duration-200" href="connect.html">Contacts</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-[#0B0B0D] hover:bg-primary hover:text-white font-display text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-300" href="index.html#rfq-desk">
+        <span class="">B2B PORTAL / RFQ</span>
+        <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full pt-20 flex-1 flex flex-col">
+  <!-- BREADCRUMB & PAGE HEADER -->
+  <section class="w-full bg-surface-container-lowest border-b border-surface-container-high/40 py-6 px-6 lg:px-12">
+    <div class="max-w-[1680px] mx-auto flex flex-col gap-3">
+      <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">HOME</a>
+        <span>/</span>
+        <a href="products.html" class="hover:text-white transition-colors">PRODUCTS</a>
+        <span>/</span>
+        <span class="text-primary font-bold">CYLINDER &amp; PISTON</span>
+      </div>
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-mono uppercase tracking-widest text-primary font-bold">DIV_02 // COMBUSTION &amp; THERMAL DYNAMICS</span>
+          <h1 class="font-display text-3xl lg:text-5xl font-bold uppercase tracking-tight text-white mt-1">CYLINDER &amp; PISTON KIT PRODUCT LIST</h1>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="image/Cylinder_Piston_Spec.pdf" download="Cylinder_Piston_Spec.pdf" onclick="alert('Downloading Cylinder &amp; Piston Spec &amp; CAD Data...');" class="px-4 py-2.5 bg-surface-container hover:bg-surface-container-high border border-primary/40 text-primary hover:text-white font-mono text-xs uppercase tracking-wider font-bold rounded transition-colors flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">download</span>
+            <span>DOWNLOAD SPEC &amp; CAD</span>
+          </a>
+          <a href="connect.html" class="px-5 py-2.5 bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold rounded hover:brightness-110 transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">request_quote</span>
+            <span>RFQ FOR CYLINDER KITS</span>
+          </a>
+          <a href="products.html" class="px-4 py-2.5 bg-surface-container hover:bg-surface-container-high border border-surface-container-high text-white font-mono text-xs uppercase tracking-wider rounded transition-colors flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+            <span>ALL PRODUCTS</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO PRODUCT SHOWCASE -->
+  <section class="w-full py-10 px-6 lg:px-12 border-b border-surface-container-high/40">
+    <div class="max-w-[1680px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <!-- LEFT: PRODUCT IMAGE DISPLAY -->
+      <div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl border border-surface-container-high/60 p-6 relative overflow-hidden group shadow-2xl">
+        <div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+          <span class="px-3 py-1 bg-black/80 backdrop-blur border border-primary/40 text-primary font-mono text-[11px] font-bold uppercase tracking-wider rounded">NIKASIL CERAMIC COATED BORE</span>
+          <span class="px-3 py-1 bg-black/80 backdrop-blur border border-white/20 text-white font-mono text-[11px] uppercase tracking-wider rounded">FORGED 2618-T6 PISTON</span>
+        </div>
+        <button type="button" onclick="openLightbox('image/Cylinder &amp; Piston.png', 'Hero Product Showcase')" class="aspect-[4/3] w-full flex items-center justify-center overflow-hidden rounded-xl block group/img relative" title="Click to view full size image">
+          <img src="image/Cylinder &amp; Piston.png" alt="Cylinder &amp; Piston" class="w-full h-full object-contain group-hover/img:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-mono text-xs">
+            <span class="material-symbols-outlined text-[20px]">zoom_in</span> VIEW FULL SPEC IMAGE
+          </div>
+        </button>
+        <div class="mt-4 pt-4 border-t border-surface-container-high/40 flex items-center justify-between text-xs font-mono text-slate-400">
+          <span>SPEC CODE: LNC-CYL-2026</span>
+          <span class="text-emerald-400 flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse"></span> READY FOR DISPATCH</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: SPEC & OVERVIEW -->
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        <div>
+          <h2 class="font-display text-2xl lg:text-3xl font-bold uppercase text-white tracking-tight">HIGH-COMPRESSION NIKASIL CYLINDER &amp; FORGED PISTON KIT</h2>
+          <p class="text-sm text-slate-300 font-body mt-3 leading-relaxed">
+            LINCCORE Racing Cylinder Block &amp; Forged Piston Kits deliver ultimate thermal dissipation and reduced friction under high RPM racing loads. Precision cast aluminum alloy barrel lined with silicon-carbide Nikasil plating, matched to a 2618-T6 forged slipper piston with DLC-coated wrist pins.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+          <div class="bg-surface-container p-4 rounded-xl border border-surface-container-high/60">
+            <span class="text-[10px] font-mono uppercase text-slate-400">BORE LINING</span>
+            <div class="text-lg font-mono font-bold text-primary mt-1">Nikasil Electro-Plate</div>
+          </div>
+          <div class="bg-surface-container p-4 rounded-xl border border-surface-container-high/60">
+            <span class="text-[10px] font-mono uppercase text-slate-400">PISTON ALLOY</span>
+            <div class="text-lg font-mono font-bold text-white mt-1">Forged 2618-T6</div>
+          </div>
+          <div class="bg-surface-container p-4 rounded-xl border border-surface-container-high/60">
+            <span class="text-[10px] font-mono uppercase text-slate-400">WRIST PIN COATING</span>
+            <div class="text-lg font-mono font-bold text-white mt-1">DLC (Diamond-Like)</div>
+          </div>
+          <div class="bg-surface-container p-4 rounded-xl border border-surface-container-high/60">
+            <span class="text-[10px] font-mono uppercase text-slate-400">COMPRESSION RATIO</span>
+            <div class="text-lg font-mono font-bold text-primary mt-1">13.5:1 - 14.2:1</div>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-low p-5 rounded-xl border border-surface-container-high/60 flex flex-col gap-2">
+          <span class="text-xs font-mono font-bold uppercase text-primary tracking-wider">ENGINEERING HIGHLIGHTS</span>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-body text-slate-300">
+            <li class="flex items-center gap-2"><span class="text-primary">•</span> Ultra-low friction Nikasil cylinder wall honing</li>
+            <li class="flex items-center gap-2"><span class="text-primary">•</span> High compression dome design for enhanced power output</li>
+            <li class="flex items-center gap-2"><span class="text-primary">•</span> Includes Nitride piston rings, DLC pin &amp; circlips</li>
+            <li class="flex items-center gap-2"><span class="text-primary">•</span> OEM standard and big-bore displacement options available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SPECIFICATION PART LIST TABLE (20 SKUs) -->
+  <section class="w-full py-12 px-6 lg:px-12 bg-surface-container-lowest">
+    <div class="max-w-[1680px] mx-auto flex flex-col gap-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-surface-container-high/40 pb-4">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-primary font-bold">PRODUCT CATALOG MATRIX</span>
+          <h2 class="font-display text-2xl font-bold uppercase text-white mt-1">CYLINDER &amp; PISTON KIT PART NUMBER LIST (29 SKUs)</h2>
+        </div>
+        <div class="text-xs font-mono text-slate-400">
+          SHOWING 29 OEM APPROVED SKUs (WITH WHOLESALE PRICING)
+        </div>
+      </div>
+
+      <!-- DOWNLOAD SPECIFICATION DATA SHEET CARD -->
+      <a href="image/Cylinder_Piston_Spec.pdf" download="Cylinder_Piston_Spec.pdf" onclick="alert('Downloading Cylinder &amp; Piston Spec &amp; CAD Data...');" class="p-4 rounded-xl bg-surface-container border border-surface-container-high/80 hover:border-primary/60 transition-all flex flex-col sm:flex-row items-center justify-between gap-4 group">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-primary-container/20 border border-primary/30 flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+            <span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-[22px] transition-colors">description</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xs font-mono font-bold text-white uppercase tracking-wider group-hover:text-primary transition-colors">CYLINDER &amp; PISTON KIT SPECIFICATION SHEET</span>
+            <span class="text-[11px] font-mono text-slate-400">Technical Datasheet &amp; CAD Specs (4.2MB PDF / CAD)</span>
+          </div>
+        </div>
+        <div class="w-full sm:w-auto px-4 py-2 bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold rounded group-hover:brightness-110 transition-all flex items-center justify-center gap-2 shrink-0">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span>DOWNLOAD SPEC</span>
+        </div>
+      </a>
+
+      <!-- BRAND FILTER TABS -->
+      <div class="flex flex-wrap items-center gap-2 pt-2 pb-4 border-b border-surface-container-high/40">
+        <span class="text-xs font-mono uppercase text-slate-400 mr-2">FILTER BY BRAND:</span>
+        <button onclick="filterBrand(this, 'all')" class="brand-btn px-3 py-1.5 rounded bg-primary-container text-on-primary-container font-mono text-[11px] font-bold uppercase tracking-wider transition-all">ALL BRANDS</button>
+        <button onclick="filterBrand(this, 'honda')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">HONDA</button>
+        <button onclick="filterBrand(this, 'yamaha')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">YAMAHA</button>
+        <button onclick="filterBrand(this, 'kymco')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">KYMCO</button>
+        <button onclick="filterBrand(this, 'sym')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">SYM</button>
+        <button onclick="filterBrand(this, 'piaggio')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">PIAGGIO</button>
+        <button onclick="filterBrand(this, 'kawasaki')" class="brand-btn px-3 py-1.5 rounded bg-surface-container text-slate-300 hover:text-white font-mono text-[11px] uppercase tracking-wider transition-all">KAWASAKI</button>
+      </div>
+
+      <!-- TABLE CONTAINER -->
+      <div class="w-full overflow-x-auto rounded-xl border border-surface-container-high/60 bg-surface-container">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-surface-container-high text-xs font-mono uppercase text-primary border-b border-surface-container-high/60">
+              <th class="py-4 px-4">OEM PART CODE</th>
+              <th class="py-4 px-4">BRAND</th>
+              <th class="py-4 px-4">COMPATIBLE MOTORCYCLE MODEL</th>
+              <th class="py-4 px-4">BORE &amp; SPECS</th>
+              <th class="py-4 px-4 text-emerald-400 font-bold">EXW PRICE (RMB)</th>
+              <th class="py-4 px-4">KIT COMPONENTS INCLUDED</th>
+              <th class="py-4 px-4 text-right">ACTION</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-surface-container-high/40 text-xs font-body text-slate-200">
+            <!-- HONDA SKUs -->
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">K59 / K36</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda PCX150 / VARIO150 / CLICK150 (K59 / K36)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 60.0mm / 62.0mm / 63.0mm Upgrade Kit</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥88.18 - 99.54</td>
+              <td class="py-4 px-4 text-slate-300">Racing Cylinder Block + Piston Kit + Ring + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">K0S / K1Z</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda PCX160 / CLICK160 / VARIO 160 (K0S / K1Z)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 62.0mm / 63.0mm (160cc-185cc)</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥92.86 - 101.54</td>
+              <td class="py-4 px-4 text-slate-300">Nikasil Racing Block + Forged Piston Kit + Pin + Head Gasket</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KPH</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Wave125 / Karisma / XRM125 / Dream125 (KPH)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 56.0mm / 57.0mm / 59.0mm / 60.0mm / 62.0mm / 66.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥83.50 - 94.86</td>
+              <td class="py-4 px-4 text-slate-300">Aluminum Cylinder Block + Piston Kit + Rings + Pin + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KZR</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Click125i / Vario Techno 125 / PCX125 / Air Blade (KZR)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 59.0mm / 60.0mm / 62.0mm / 63.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥88.85 - 96.86</td>
+              <td class="py-4 px-4 text-slate-300">Nikasil Cylinder Barrel + Piston Set + DLC Pin + Gasket Kit</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">K1M / 26P / K3F</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Wave110-i / Revo FI / Blade 110 FI (K1M / 26P / K3F)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 55.0mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥66.80 - 86.84</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Assembly + Rings + Head Gasket</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KYZ-I</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Supra-X125 Helm-in FI / Future 125 FI (KYZ-I)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 57.0mm Upgrade Performance Kit</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥86.18 - 92.86</td>
+              <td class="py-4 px-4 text-slate-300">High-Temp Cylinder + Racing Piston + DLC Pin + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KZL</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Beat FI / Vision 110 / Beat PGM-FI (KZL)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.5mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥72.82 - 81.50</td>
+              <td class="py-4 px-4 text-slate-300">Aluminum Cylinder Block + Piston Kit + Wrist Pin + Rings</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">K44 / K25</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Beat POP / Beat eSP / Beat FI V1 / Vision 110 (K44 / K25)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.5mm Performance Upgrade</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥76.82 - 88.18</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Barrel + High Compression Piston + Rings + Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KWB</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Blade / Revo Absolute / Wave110 / Dash110 (KWB)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.0mm / 55.0mm Standard &amp; Upgrade</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥74.82 - 86.84</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Kit + Wrist Pin + Rings</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KWB-I / KZV</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Wave110 FI / Dream 110 FI / Dash FI (KWB-I / KZV)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.0mm / 55.0mm / 56.0mm High Performance</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥75.49 - 83.50</td>
+              <td class="py-4 px-4 text-slate-300">Racing Cylinder Block + Piston Kit + Full Gasket Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KVY (54.5mm)</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Beat / Spacy Helm In / Scoopy-I (KVY 54.5mm)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.5mm Racing Performance Upgrade</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥71.48 - 80.16</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Set + Rings + Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KVY (53mm)</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Beat / Spacy Helm In / Scoopy-I (KVY 53mm)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm Standard Spec Replacement</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥71.48 - 83.50</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Assembly + Rings + Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">GN5</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Grand / EX5 / WIN100 / DREAM100 / C100 (GN5)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.0mm / 55.0mm / 56.0mm Heavy-Duty</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥59.46 - 68.54</td>
+              <td class="py-4 px-4 text-slate-300">Cast Iron Cylinder Kit + Piston Ring + Full Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KFM / KFV</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Wave100 / Supra Fit New / EX5 (KFM / KFV)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.0mm / 55.0mm / 56.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥72.82 - 81.50</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Assembly + Rings + Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KOJ</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda Genio / Scoopy-I / Wave110-I (KOJ)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm High Quality Race Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥70.14 - 80.16</td>
+              <td class="py-4 px-4 text-slate-300">Aluminum Cylinder Block + Piston Kit + Pin + Rings</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KFL</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda XRM110 / Wave110 / EX5-FI (KFL)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 53.0mm / 54.0mm / 55.0mm / 56.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥77.49 - 86.18</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Kit + Pin + Ring Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KTW</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-red-950/80 border border-red-500/40 text-red-300 font-mono text-[11px] font-bold uppercase tracking-wider">HONDA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Honda SH300 / FORZA 300 (2010-2020) (12200-KTW-901 / KTW)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 72.0mm / 76.0mm / 77.0mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥148.00 - 175.00</td>
+              <td class="py-4 px-4 text-slate-300">300cc Water-Cooled Cylinder Barrel + Piston Kit + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <!-- YAMAHA SKUs -->
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">5LW / 5VV</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Mio 115 / Mio Soul / Ego 115 / Mio Sporty (5LW / 5VV)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.0mm / 58.5mm / 59.0mm Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥74.82 - 83.50</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Kit + Ring + Pin + Gasket Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">5YP</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha LC135 / Jupiter MX / Sniper 135 / Crypton X (5YP)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 60.0mm / 62.0mm / 63.0mm / 65.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥83.50 - 99.54</td>
+              <td class="py-4 px-4 text-slate-300">Nikasil Cylinder + Forged Slipper Piston + Ring + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">54P / 54S</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Mio J / Mio GT / Mio Soul 115 / Ego's FI (54P / 54S)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.5mm / 56.0mm / 59.0mm Racing</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.17 - 90.18</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Piston Set + Nitride Rings + Wrist Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">1DY</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha SRL115 FI / Jupiter Z1 / Vega Force FI (1DY)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 55.0mm / 57.0mm / 58.5mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥79.50 - 90.18</td>
+              <td class="py-4 px-4 text-slate-300">Cylinder Block + Forged Piston + Rings + Pin + Gasket Kit</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">2PH</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Mio M3 125 / Mio i125 / Ego Avantiz / GT-125i (2PH)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.5mm / 56.0mm / 59.0mm High Comp</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥79.50 - 88.18</td>
+              <td class="py-4 px-4 text-slate-300">Aluminum Cylinder Barrel + Piston Assembly + Ring Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">YZ450F</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha YZ450F / WR450F (2018-2026)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 97.0mm / 450cc / Comp: 13.8:1</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥195.00 - 225.00</td>
+              <td class="py-4 px-4 text-slate-300">Nikasil Cylinder + Forged Slipper Piston</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">2DS / B8R</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha XMAX125 / NMAX125 / NMAX125 NEW (2DS-E1311-10 / B8R / 5D7)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.0mm / 57.0mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.17 - 95.00</td>
+              <td class="py-4 px-4 text-slate-300">Liquid-Cooled Cylinder Block + Piston Kit + Head Gasket</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">1C0</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha YP250 / Majesty 250 (1C0-E1311-0)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 69.0mm (250cc Maxi Scooter)</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥110.00 - 135.00</td>
+              <td class="py-4 px-4 text-slate-300">250cc Water-Cooled Cylinder Barrel + Heavy-Duty Piston Kit</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">45P</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha FZ16 / FZ-S / Byson 150 (45P-E1310-00)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 58.0mm / 63.5mm Performance Upgrade</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥85.00 - 98.00</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Sport Cylinder + Piston Kit + Nitride Rings</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">5VL</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha YBR125 / XTZ125 / Factor 125 (5VL-E1310-00-00)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥75.00 - 86.00</td>
+              <td class="py-4 px-4 text-slate-300">Cast Iron Cylinder Block + OEM Piston Assembly + Rings</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">1LBE</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha XMAX155 NEW / NMAX155 / N-MAX125RC (1LBE131100)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.4mm / 58.0mm VVA Engine Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥88.00 - 105.00</td>
+              <td class="py-4 px-4 text-slate-300">VVA Racing Cylinder Kit + Forged Piston + Full Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">B6H</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Nmax 150 (2022-2024) (B6H-E1311-0000 / B6H)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 58.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥88.00 - 105.00</td>
+              <td class="py-4 px-4 text-slate-300">Water-Cooled Cylinder Block + Piston Kit + Ring Set (58mm)</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">2DP</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Nmax 150 (2017-2022) (2DP-E1311-1000 / 2DP)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 58.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥86.00 - 102.00</td>
+              <td class="py-4 px-4 text-slate-300">Liquid-Cooled Cylinder Barrel + Piston Kit + Ring Set (58mm)</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">B8R</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha NMAX125 / Xmax (2011-2024) (B8R-E1311-0000 / B8R)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.00 - 98.00</td>
+              <td class="py-4 px-4 text-slate-300">Water-Cooled Cylinder Barrel + Piston Kit + Ring Set (52mm)</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">5D7</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha Xmax 125 (2010-2018) (5D7-E1311-0000 / 5D7)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.00 - 96.00</td>
+              <td class="py-4 px-4 text-slate-300">Liquid-Cooled Cylinder Barrel + Piston Kit + Ring Set (52mm)</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">B74</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-blue-950/80 border border-blue-500/40 text-blue-300 font-mono text-[11px] font-bold uppercase tracking-wider">YAMAHA</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Yamaha XMAX 300 (1996-2023) (B74-E1311-0000 / B74)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 69.0mm / 72.5mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥145.00 - 168.00</td>
+              <td class="py-4 px-4 text-slate-300">300cc Water-Cooled Cylinder Barrel + Piston Assembly</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <!-- KYMCO SKUs -->
+            <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">GY6-125 / GY6-150</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-purple-950/80 border border-purple-500/40 text-purple-300 font-mono text-[11px] font-bold uppercase tracking-wider">KYMCO</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">KYMCO Agility 125 / Agility 150 (GY6-125 / GY6-150)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.4mm / 57.4mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥65.00 - 78.50</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Cylinder Barrel + NARAKU Piston Kit + Gasket Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">G5</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-purple-950/80 border border-purple-500/40 text-purple-300 font-mono text-[11px] font-bold uppercase tracking-wider">KYMCO</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">KYMCO G5 125 / Racing 125 / Like 125 (G5)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 54.0mm / 58.5mm / 59.0mm / 61.0mm</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥78.00 - 92.00</td>
+              <td class="py-4 px-4 text-slate-300">High Comp 4V Cylinder Barrel + Piston Set + Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <!-- SYM SKUs -->
+            <tr data-brand="sym" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">A61 / XJA / ARA</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-teal-950/80 border border-teal-500/40 text-teal-300 font-mono text-[11px] font-bold uppercase tracking-wider">SYM</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">SYM Symphony 125 / Sym 150/175 / Symphony 200 (12101-ARB-000 / 12100-XJA-010 / A61)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.4mm / 57.4mm / 61.0mm Standard &amp; Big Bore</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥72.00 - 88.00</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Alloy Cylinder Kit + Piston Set + Gasket Set</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <!-- PIAGGIO SKUs -->
+            <tr data-brand="piaggio" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">1A000770</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 font-mono text-[11px] font-bold uppercase tracking-wider">PIAGGIO</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Piaggio Liberty 150 (2012-2022) (1A000770)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 58.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥85.00 - 98.00</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Cylinder Barrel + Piston Set + Wrist Pin + Circlips</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="piaggio" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">1A000771</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 font-mono text-[11px] font-bold uppercase tracking-wider">PIAGGIO</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Piaggio Liberty 125 (2019-2021) (1A000771 / 1A000356)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 52.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.00 - 95.00</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Cylinder Barrel + Piston Set + Wrist Pin</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+            <tr data-brand="piaggio" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">831975</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-sky-950/80 border border-sky-500/40 text-sky-300 font-mono text-[11px] font-bold uppercase tracking-wider">PIAGGIO</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Piaggio Liberty 4T 125 (831975)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 57.0mm Standard Spec</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥82.00 - 96.00</td>
+              <td class="py-4 px-4 text-slate-300">Air-Cooled Cylinder Block + Piston Kit + Wrist Pin + Rings + Full Gaskets</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+
+            <!-- KAWASAKI SKUs -->
+            <tr data-brand="kawasaki" class="brand-row hover:bg-surface-container-high/40 transition-colors">
+              <td class="py-4 px-4 font-mono font-bold text-white whitespace-nowrap">KX450</td>
+              <td class="py-4 px-4"><span class="px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-mono text-[11px] font-bold uppercase tracking-wider">KAWASAKI</span></td>
+              <td class="py-4 px-4 font-semibold text-slate-100">Kawasaki KX450 / KX450X (2019-2025)</td>
+              <td class="py-4 px-4 font-mono text-slate-300">Bore: 96.0mm / 449cc / Comp: 13.6:1</td>
+              <td class="py-4 px-4 font-mono font-bold text-emerald-400 text-sm whitespace-nowrap">¥190.00 - 220.00</td>
+              <td class="py-4 px-4 text-slate-300">Barrel + Piston + DLC Pin + Top Gasket</td>
+              <td class="py-4 px-4 text-right whitespace-nowrap">
+                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                  <span>INQUIRE RFQ</span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVIGATION TO OTHER 7 PRODUCTS -->
+  <section class="w-full py-12 px-6 lg:px-12 border-t border-surface-container-high/40">
+    <div class="max-w-[1680px] mx-auto flex flex-col gap-6">
+      <div class="flex items-center justify-between border-b border-surface-container-high/40 pb-4">
+        <h3 class="font-display text-xl font-bold uppercase text-white">EXPLORE OTHER PRECISION COMPONENT CATEGORIES</h3>
+        <a href="products.html" class="text-xs font-mono text-primary hover:text-white uppercase font-bold flex items-center gap-1">VIEW ALL PRODUCTS ➔</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+        <a href="starter-motor.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/Starter Motor.png" alt="Starter Motor" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Starter Motor</span>
+        </a>
+        <a href="crankshaft.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/Crankshaft.png" alt="Crankshaft" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Crankshaft</span>
+        </a>
+        <a href="steering-bearing.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/Steering Bearing.png" alt="Steering Bearing" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Steering Bearing</span>
+        </a>
+        <a href="lever.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/lever.png" alt="Lever" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Lever</span>
+        </a>
+        <a href="temperature-sensor.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/temperature sensor.png" alt="Temp Sensor" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Temp Sensor</span>
+        </a>
+        <a href="stator.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/Magneto Stator.png" alt="Stator" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Magneto Stator</span>
+        </a>
+        <a href="clutch.html" class="p-3 bg-surface-container rounded-xl border border-surface-container-high/60 hover:border-primary transition-all text-center group">
+          <img src="image/Clutch.png" alt="Clutch" class="h-20 w-full object-contain rounded-lg mb-2 group-hover:scale-105 transition-transform">
+          <span class="text-xs font-bold text-white block">Slipper Clutch</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 bg-[#0a0a0c] pt-16 pb-12 text-sm text-neutral-400">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+      <div class="lg:col-span-2 space-y-4">
+        <a href="index.html" class="inline-block"><img src="image/logo.png" alt="LINCCORE" class="h-10 md:h-12 w-auto object-contain"></a>
+        <p class="text-xs uppercase tracking-widest text-neutral-400 font-mono">Tier-1 Motorsport &amp; OEM Engineering Partner</p>
+        <p class="text-xs text-neutral-400 max-w-sm leading-relaxed">High-precision powertrain, drivetrain, and metrology systems engineered for championship racing constructors and global motorcycle OEMs.</p>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Engineering Hubs</h4>
+        <div class="space-y-3 text-xs">
+          <div><div class="text-white font-medium">Milan Hub // EU</div></div>
+          <div><div class="text-white font-medium">China Hub // APAC</div></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Navigation</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="index.html" class="hover:text-white transition-colors">HOME</a></li>
+          <li><a href="products.html" class="hover:text-white transition-colors text-white font-bold">PRODUCTS</a></li>
+          <li><a href="about us.html" class="hover:text-white transition-colors">ABOUT US</a></li>
+          <li><a href="news.html" class="hover:text-white transition-colors">Q&amp;A</a></li>
+          <li><a href="connect.html" class="hover:text-white transition-colors">CONTACTS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Governance &amp; Specs</h4>
+        <ul class="space-y-2.5 text-xs text-neutral-400">
+          <li><a href="#" class="hover:text-white transition-colors">Confidential OEM NDA</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Code of Ethics</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">B2B RFQ Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-400 font-mono gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#ff2e00] inline-block"></span>
+        <span>© 2025 LINCCORE S.p.A. — All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span>MILAN TECH HUB • WENZHOU ADVANCED MFG</span>
+        <span class="text-neutral-400">STATUS: TELEMETRY ACTIVE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function filterBrand(btnElement, brand) {
+  const rows = document.querySelectorAll('.brand-row');
+  const buttons = document.querySelectorAll('.brand-btn');
+  buttons.forEach(b => {
+    b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold');
+    b.classList.add('bg-surface-container', 'text-slate-300');
+  });
+  btnElement.classList.remove('bg-surface-container', 'text-slate-300');
+  btnElement.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+  rows.forEach(row => {
+    if (brand === 'all' || row.getAttribute('data-brand') === brand) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+}
+</script>
+
+<!-- LIGHTBOX MODAL -->
+<div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+  <div class="relative max-w-4xl w-full bg-surface-container rounded-2xl border border-surface-container-high p-4 flex flex-col items-center gap-4 shadow-2xl">
+    <button onclick="closeLightbox()" type="button" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-black/60 hover:bg-red-600/80 p-2 rounded-full backdrop-blur border border-white/10 transition-all z-10" title="Close (Esc)">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <div class="w-full flex justify-center items-center overflow-hidden rounded-xl bg-white p-3 border border-surface-container-high shadow-inner">
+      <img id="lightboxImg" src="" alt="" class="max-h-[75vh] max-w-full w-auto object-contain rounded-lg transition-all duration-300">
+    </div>
+    <div class="text-center px-4">
+      <h4 id="lightboxTitle" class="text-base font-mono font-bold text-white tracking-wide"></h4>
+      <p class="text-xs font-mono text-primary mt-1 flex items-center justify-center gap-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+        LINCCORE PRECISION MOTORCYCLE OEM COMPONENT SPECIFICATION
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+function openLightbox(src, title) {
+  const modal = document.getElementById('lightboxModal');
+  const img = document.getElementById('lightboxImg');
+  const titleEl = document.getElementById('lightboxTitle');
+  if (img && titleEl && modal) {
+    img.src = src;
+    img.alt = title || 'Product Image';
+    titleEl.innerText = title || '';
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeLightbox() {
+  const modal = document.getElementById('lightboxModal');
+  if (modal) {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeLightbox();
+  }
+});
+
+const modalEl = document.getElementById('lightboxModal');
+if (modalEl) {
+  modalEl.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeLightbox();
+    }
+  });
+}
+</script>
+</body>
+</html>
+
+
+
