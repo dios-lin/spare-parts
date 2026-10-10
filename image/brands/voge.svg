@@ -1,0 +1,9 @@
+<svg viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <g transform="translate(10, 10)">
+    <!-- VOGE Wing/Emblem Logo -->
+    <path d="M 20 15 L 50 75 L 80 15 L 63 15 L 50 50 L 37 15 Z" />
+    <path d="M 40 15 L 50 38 L 60 15 Z" opacity="0.6"/>
+    <!-- VOGE Wordmark -->
+    <text x="190" y="62" font-family="'Outfit', 'Arial Black', sans-serif" font-size="42" font-weight="900" letter-spacing="8" text-anchor="middle">VOGE</text>
+  </g>
+</svg>
