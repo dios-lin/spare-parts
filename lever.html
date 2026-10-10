@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="dark scroll-smooth" lang="en">
 <head>
 <meta charset="utf-8">
@@ -86,9 +86,9 @@ tailwind.config = {
           <h1 class="font-display text-3xl lg:text-5xl font-bold uppercase tracking-tight text-white mt-1">BRAKE &amp; CLUTCH LEVER PRODUCT LIST</h1>
         </div>
         <div class="flex items-center gap-3">
-          <a href="image/lever.png" download="Brake_Clutch_Lever_Spec.png" onclick="alert('Downloading Brake &amp; Clutch Lever Spec &amp; CAD Data...');" class="px-4 py-2.5 bg-surface-container hover:bg-surface-container-high border border-primary/40 text-primary hover:text-white font-mono text-xs uppercase tracking-wider font-bold rounded transition-colors flex items-center gap-2">
-            <span class="material-symbols-outlined text-[16px]">download</span>
-            <span>DOWNLOAD SPEC &amp; CAD</span>
+          <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="px-4 py-2.5 bg-surface-container hover:bg-surface-container-high border border-primary/40 text-primary hover:text-white font-mono text-xs uppercase tracking-wider font-bold rounded transition-colors flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">description</span>
+            <span>DOWNLOAD SPEC &amp; CAD (PDF)</span>
           </a>
           <a href="connect.html" class="px-5 py-2.5 bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold rounded hover:brightness-110 transition-all flex items-center gap-2">
             <span class="material-symbols-outlined text-[16px]">request_quote</span>
@@ -152,8 +152,14 @@ tailwind.config = {
           </div>
         </div>
 
-        <div class="bg-surface-container-low p-5 rounded-xl border border-surface-container-high/60 flex flex-col gap-2">
-          <span class="text-xs font-mono font-bold uppercase text-primary tracking-wider">ENGINEERING HIGHLIGHTS</span>
+        <div class="bg-surface-container-low p-5 rounded-xl border border-surface-container-high/60 flex flex-col gap-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono font-bold uppercase text-primary tracking-wider">ENGINEERING HIGHLIGHTS</span>
+            <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary-container/20 hover:bg-primary-container text-primary hover:text-on-primary-container border border-primary/40 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all">
+              <span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+              <span>VIEW CATALOG PDF</span>
+            </a>
+          </div>
           <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-body text-slate-300">
             <li class="flex items-center gap-2"><span class="text-primary">•</span> Precision 5-Axis CNC machined from solid aluminum block</li>
             <li class="flex items-center gap-2"><span class="text-primary">•</span> Laser-etched serial numbers and alignment marks</li>
@@ -179,10 +185,10 @@ tailwind.config = {
       </div>
 
       <!-- DOWNLOAD SPECIFICATION DATA SHEET CARD -->
-      <a href="image/lever.png" download="Brake_Clutch_Lever_Spec.png" onclick="alert('Downloading Brake &amp; Clutch Lever Spec &amp; CAD Data...');" class="p-4 rounded-xl bg-surface-container border border-surface-container-high/80 hover:border-primary/60 transition-all flex flex-col sm:flex-row items-center justify-between gap-4 group">
+      <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="p-4 rounded-xl bg-surface-container border border-surface-container-high/80 hover:border-primary/60 transition-all flex flex-col sm:flex-row items-center justify-between gap-4 group">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-lg bg-primary-container/20 border border-primary/30 flex items-center justify-center shrink-0 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
-            <span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-[22px] transition-colors">description</span>
+            <span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-[22px] transition-colors">picture_as_pdf</span>
           </div>
           <div class="flex flex-col">
             <span class="text-xs font-mono font-bold text-white uppercase tracking-wider group-hover:text-primary transition-colors">BRAKE &amp; CLUTCH LEVER SPECIFICATION SHEET</span>
@@ -191,7 +197,7 @@ tailwind.config = {
         </div>
         <div class="w-full sm:w-auto px-4 py-2 bg-primary-container text-on-primary-container font-mono text-xs uppercase tracking-wider font-bold rounded group-hover:brightness-110 transition-all flex items-center justify-center gap-2 shrink-0">
           <span class="material-symbols-outlined text-[16px]">download</span>
-          <span>DOWNLOAD SPEC</span>
+          <span>DOWNLOAD SPEC (PDF)</span>
         </div>
       </a>
 
@@ -229,7 +235,7 @@ tailwind.config = {
               <th class="py-4 px-5">COMPATIBLE MOTORCYCLE MODEL</th>
               <th class="py-4 px-5">LEVER TYPE &amp; SPECIFICATION</th>
               <th class="py-4 px-5">ANODIZED COLOR FINISH</th>
-              <th class="py-4 px-5 text-right">ACTION</th>
+              <th class="py-4 px-5 text-right">SPEC SHEET &amp; ACTION</th>
             </tr>
           </thead>
           <tbody id="catalogTbody" class="divide-y divide-surface-container-high/40 text-xs font-body text-slate-200">
@@ -239,10 +245,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Brake & Clutch Lever Pair (Left/Right Set)</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -251,10 +263,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Brake & Clutch Lever Pair (Left/Right Set)</td>
               <td class="py-4 px-5 text-slate-300">Stealth Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -263,10 +281,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Brake & Clutch Lever Pair (Left/Right Set)</td>
               <td class="py-4 px-5 text-slate-300">Matte Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -275,10 +299,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Front Brake Lever (Adjustable)</td>
               <td class="py-4 px-5 text-slate-300">Hard Anodized Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -287,10 +317,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Front Brake Lever</td>
               <td class="py-4 px-5 text-slate-300">Silver / Polish</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -299,10 +335,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Brake Lever with Bracket</td>
               <td class="py-4 px-5 text-slate-300">Black & Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -311,10 +353,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Front Brake Lever</td>
               <td class="py-4 px-5 text-slate-300">Matte Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -323,10 +371,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Adventure Ergonomic Lever Pair (Left/Right Set)</td>
               <td class="py-4 px-5 text-slate-300">Stealth Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -335,10 +389,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">GT Maxi-Scooter Lever Pair (Left/Right Set)</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -347,10 +407,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Front Brake Lever</td>
               <td class="py-4 px-5 text-slate-300">Anodized Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="voge" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -359,10 +425,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Right Hand Sport Brake Lever</td>
               <td class="py-4 px-5 text-slate-300">Matte Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="cfmoto" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -371,10 +443,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Clutch & Brake Lever Assy</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="cfmoto" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -383,10 +461,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Clutch & Brake Lever Assy</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="cfmoto" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -395,10 +479,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Clutch & Brake Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="cfmoto" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -407,10 +497,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Clutch & Brake Lever Assy</td>
               <td class="py-4 px-5 text-slate-300">Matte Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -419,10 +515,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Master Cylinder & Lever Assembly Set</td>
               <td class="py-4 px-5 text-slate-300">Polished Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -431,10 +533,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Brake & Clutch Lever Kit (4-Pcs Set)</td>
               <td class="py-4 px-5 text-slate-300">Black & Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -443,10 +551,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Maxi Scooter Brake Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Silver Finish</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -455,10 +569,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Front & Rear Brake Lever Pair (Right & Left Set)</td>
               <td class="py-4 px-5 text-slate-300">Polished Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="kymco" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -467,10 +587,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Multi-Model Lever Set</td>
               <td class="py-4 px-5 text-slate-300">Black & Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -479,10 +605,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Front & Rear Brake Lever Pair (Right & Left Set)</td>
               <td class="py-4 px-5 text-slate-300">Silver Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -491,10 +623,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Front & Rear Brake Lever Pair (Right & Left Set)</td>
               <td class="py-4 px-5 text-slate-300">Polished Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="honda" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -503,10 +641,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Front & Rear Brake Lever Pair (Right & Left Set)</td>
               <td class="py-4 px-5 text-slate-300">Matte Black</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -515,10 +659,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Front & Rear Brake Lever Pair (Right & Left Set)</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="yamaha" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -527,10 +677,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Clutch & Front Brake Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Polished Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="aprilia" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -539,10 +695,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Sportbike Brake & Clutch Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Silver Finish</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="aprilia" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -551,10 +713,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Dual-Sport Brake & Clutch Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Silver Finish</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="aprilia" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -563,10 +731,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Scooter Brake Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Black Anodized</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr data-brand="aprilia" class="brand-row hover:bg-surface-container-high/40 transition-colors">
@@ -575,10 +749,16 @@ tailwind.config = {
               <td class="py-4 px-5 font-mono text-slate-300">Superbike Ergonomic Lever Pair</td>
               <td class="py-4 px-5 text-slate-300">Polished Silver</td>
               <td class="py-4 px-5 text-right">
-                <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
-                  <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
-                  <span>INQUIRE RFQ</span>
-                </a>
+                <div class="flex items-center justify-end gap-2">
+                  <a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary hover:text-white border border-primary/30 font-mono text-[11px] font-bold uppercase tracking-wider rounded transition-all group" title="Download Lever PDF Spec Sheet">
+                    <span class="material-symbols-outlined text-[13px] text-primary group-hover:text-white">picture_as_pdf</span>
+                    <span>PDF SPEC</span>
+                  </a>
+                  <a href="connect.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-primary-container to-[#ff2e00] text-white font-mono text-[11px] font-bold uppercase tracking-wider rounded border border-white/20 shadow-sm hover:shadow-[0_0_15px_rgba(255,86,53,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200 group">
+                    <span class="material-symbols-outlined text-[13px] text-white/90 group-hover:translate-x-0.5 transition-transform">send</span>
+                    <span>INQUIRE RFQ</span>
+                  </a>
+                </div>
               </td>
             </tr>
 
@@ -661,10 +841,11 @@ tailwind.config = {
       <div>
         <h4 class="text-xs font-mono uppercase tracking-widest text-white mb-4">Governance &amp; Specs</h4>
         <ul class="space-y-2.5 text-xs text-neutral-400">
+          <li><a href="image/Brake_Clutch_Lever_Spec.pdf" target="_blank" download="Brake_Clutch_Lever_Spec.pdf" class="hover:text-white transition-colors text-primary font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>Lever Technical Spec (PDF)</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Confidential OEM NDA</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Code of Ethics</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">B2B RFQ Portal</a></li>
+          <li><a href="connect.html" class="hover:text-white transition-colors">B2B RFQ Portal</a></li>
         </ul>
       </div>
     </div>
